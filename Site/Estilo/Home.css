@@ -1,0 +1,21 @@
+/* Início Imagem */
+.container {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-image: url(../Imagem/SunnyHome.jpg);
+    background-size: cover;       
+}
+.container .conteudo {
+    display: flex;
+    font-size: 75px;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+/* Fim Imagem */
+
+/* Início  */
+/* Fim */
