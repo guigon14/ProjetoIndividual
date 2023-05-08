@@ -18,7 +18,7 @@ body{
     height: 100px;    
     justify-content: space-between;
     align-self: flex-start;
-    margin-left: 10%;    
+    margin-left: 8%;        
 }
 
 a {    
@@ -35,10 +35,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;   
+    margin-top: 3%;
 }
 
 a:hover {
-    border-bottom: rgb(255, 0, 0) 1px solid;
+    color: #ff0000;
+    transform: scale(1.05);
+    transition: 0.20s ease-in-out;
   }
   
 

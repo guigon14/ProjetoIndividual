@@ -1,2 +1,2 @@
-# THOAP
+# THAOP
 The Age Of Pirates ⛵☠️
