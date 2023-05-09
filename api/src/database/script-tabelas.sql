@@ -21,7 +21,7 @@ CREATE TABLE quiz(
 	idQuiz INT PRIMARY KEY AUTO_INCREMENT,
 	resultado VARCHAR(45),
 	fkUsuario INT,
-	constraint FK_Usuario foreign key (idUsuario) 
+	constraint FK_Usuario foreign key (fkUsuario) 
 		references usuario (idUsuario)
 );
 /*
