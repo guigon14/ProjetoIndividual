@@ -20,7 +20,7 @@ input {
 .container {
     height: 120vh;
     width: 100%;
-    background-image:url(../Imagem/SunnyHome.jpg);
+    background-image:url(../Imagem/Login.jpg);
     background-size: cover;
     background-position: 100%;
     display: flex;
@@ -33,14 +33,14 @@ input {
     display: flex;
     background-color: whitesmoke;
     width: 25%;
-    height: 45%;
+    height: 43%;
     flex-direction: column;
     align-self: center;
-    margin-top: 3%;    
+    margin-top: 8%;    
     padding: 25px;
     border-radius: 20px;
     box-shadow: 5px 0px 15px 5px;    
-    margin-right: 40%;    
+    margin-right: 45%;    
 }
 
 .buttonlogin {
