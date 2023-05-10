@@ -38,28 +38,29 @@
         </div>
 
         <div class="container">
-            <form>
-                <div class="card card-cadastro">
+            <!-- <form> -->
+                <div class="card">
                     <h2>Bem-vindo!</h2>
                     <div class="formulario">
-                        <div class="nome">
-                            <label class="label" for="nome">Nome:</label>
+                        <div class="campo">
+                            <label class="label" for="nome">Nome</label>
                             <input id="nome_input" class="input" type="text" placeholder="Seu nome">
                         </div>
-                        <div class="email">
-                            <label class="label" for="email">E-mail</label>
+                        <div class="campo">
+                            <label class="label" for="email">Email</label>
                             <input id="email_input" class="input" type="text" placeholder="meuemail@provedor.com">
                         </div>
-                        <div class="senha">
-                            <label class="label" for="senha">Senha:</label>
-                            <input id="senha_input" class="input" type="password" placeholder="******">
+                        <div class="campo">
+                            <label class="label" for="senha">Senha</label>
+                            <input id="senha_input" class="input" type="password" placeholder="********">
                         </div>
-                        <div class="confirmacao">
+                        <div class="campo">
                             <label class="label" for="confirmacao">Confirmação da Senha</label>
-                            <input id="confirmacao_senha_input" class="input" type="password" placeholder="******">
+                            <input id="confirmacao_senha_input" class="input" type="password" placeholder="********">
                         </div>
-                        <button class="botao" onclick="cadastrar()">Cadastrar</button>
-            </form>
+                    </div>
+                    <button class="botao" onclick="cadastrar()">Cadastrar</button>
+            <!-- </form> -->
             <!-- Fim Card -->
 
         </div>
@@ -69,8 +70,7 @@
 
         <div id="div_erros_login"></div>
     </div>
-    </div>
-    </div>
+    
     <!--footer inicio-->
 
     <!--footer fim-->
