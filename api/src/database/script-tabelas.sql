@@ -24,6 +24,8 @@ CREATE TABLE quiz(
 	constraint FK_Usuario foreign key (fkUsuario) 
 		references usuario (idUsuario)
 );
+
+
 /*
 comando para sql server - banco remoto - ambiente de produção
 */

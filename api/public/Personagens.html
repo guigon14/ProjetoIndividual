@@ -9,7 +9,7 @@
     <script src="./js/funcoes.js"></script>
     <link rel="shortcut icon" href="Imagem/Chapeu.png" type="image/x-icon">
     <link rel="stylesheet" href="css/Personagens.css">
-    <link rel="stylesheet" href="css/NavBar.css">
+    <!-- <link rel="stylesheet" href="css/NavBar.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
@@ -22,9 +22,48 @@
             <ul class="navBar">
                 <li><a href="Personagens.html">Personagens</a></li>
                 <li><a href="Arcos.html">Arcos</a></li>
-                <li><a href="Login.html">Login</a></li>               
+                <li><a href="Login.html">Login</a></li>
                 <li><a href="Cadastro.html">Cadastro</a></li>
             </ul>
         </div>
     </div>
     <!-- Fim NavBar -->
+    <!-- Início Banner -->
+    <div class="container">
+        <!-- <h1>SOBRE OS PERSONAGENS</h1> -->
+        <!-- Card Luffy -->
+        <div class="card-luffy">
+            <a href="#meu-modal1" id="modalLuffy">
+                <img id="luffy" src="Imagem/cardLuffy.jpg" alt="Imagem-Luffy"></a>
+        </div>
+        <div id="meu-modal1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>                
+                <div class="informacoes">Nome: Monkey D. Luffy</div>
+                <div class="informacoes">Alcunha: Chapéu de Palha</div>
+                <div class="informacoes">Recompensa: 3,000,000,000</div>
+                <div class="informacoes">Aniversário: 05 de maio</div>
+                <div class="detalhes">
+                    Ele come demais e adora festas. Ele se diverte por ter essa personalidade
+                    livre, mas age com suas próprias crenças sem se vincular ao bom senso, e confia muito em seus
+                    Companheiros!
+                </div>
+            </div>
+        </div>
+        <!-- Fim card Luffy -->
+    </div>
+    <!-- Fim Banner -->
+
+    <script>
+        var linkModal = document.getElementById('modalLuffy');
+        var modal = document.getElementById('meu-modal1');
+        linkModal.addEventListener('click', function () {
+            modal.style.display = 'block';
+        });
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
