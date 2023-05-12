@@ -49,10 +49,10 @@ a:hover {
 .container{
     display: flex;
     width: 100%;
-    height: 650px;
-    /* background-image: url(../Imagem/Sobre.jpg);
+    height: 1000px;
+    background-image: url(../Imagem/Login.jpg);
     background-size: cover; 
-    background-position: 70%;  */
+    /* background-position: 100%;  */
 }
 
 /* .container h1{
@@ -61,6 +61,7 @@ a:hover {
     font-size: 50px;
 } */
 
+/* Cards */
 .card-luffy{
     display: flex;
     width: 20%;
@@ -72,69 +73,101 @@ a:hover {
     margin-top: 5%;
 }
 
-.container .efeito:hover{    
-    transform: scale(1.05);
-    transition: 0.20s ease-in-out;
+.card-Zoro{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  left: 15%;
+  margin-top: 5%;  
 }
 
+.card-Sanji{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  left: 15%;
+  margin-top: 5%;
+}
+/* fim Cards */
 .modal {
     display: none;
     position: fixed;
-    /* z-index: 1; */
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     /* overflow: auto; */
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.4);    
   }
   
   .modal-content {
-    width: 45%;
-    height: 40%;
+    width: 55%;
+    height: 50%;
     margin: 15% auto;
-    background-color: #D8CCB2;    
+    background-color: #e6cb93;    
     padding: 10px;      
     border: 1px solid #888;
     border-radius: 25px;
-
+    /* background-image: url(../Imagem/teste.jpg); */
+    background-size: cover;
+    background-position: 100%;
   }
 
-  /* .icons{
+  .perfil{
     display: flex;
     width: 30%;
     height: 60%;
     justify-content: end;
     position: relative;
     top: 1%;
-    left: 55%;
+    left: 50%;
     bottom: 15%;
-    background-image: url(../Imagem/Luffy.png);
     background-size: cover;
     background-position: 100%;
-  } */
+  }
+
+  .texto{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+    bottom: 50%;
+    left: 5%;
+  }
 
   .informacoes{
     display: flex;
     flex-direction: row;    
-    width: 45%;
-    font-size: 16px;
+    width: fit-content;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     position: relative;    
-    top: 3%;
+    top: 0%;
     left: 3%;
+    bottom: 15%;
     margin: 2%;
   }
 
   .detalhes{
     width: 90%;
     height: 27%;
-    font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: -1%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;   
+    font-weight: bold; 
     padding: 5%;
+    position: relative;
+    bottom: 50%;
   }
+
+  
 
   /* Início Botão close */
   .close {

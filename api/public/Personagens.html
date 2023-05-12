@@ -38,19 +38,64 @@
         </div>
         <div id="meu-modal1" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>                
-                <div class="informacoes">Nome: Monkey D. Luffy</div>
-                <div class="informacoes">Alcunha: Chapéu de Palha</div>
-                <div class="informacoes">Recompensa: 3,000,000,000</div>
-                <div class="informacoes">Aniversário: 05 de maio</div>
+                <div class="perfil"><img src="Imagem/Luffy.png" alt="Luffy" class="icons"></div>
+                
+                <div class="texto">
+                    <div class="informacoes">Nome: Monkey D. Luffy</div>
+                    <div class="informacoes">Alcunha: Chapéu de Palha</div>
+                    <div class="informacoes">Recompensa: 3,000,000,000</div>
+                    <div class="informacoes">Aniversário: 05 de maio</div>
+                </div>
                 <div class="detalhes">
                     Ele come demais e adora festas. Ele se diverte por ter essa personalidade
                     livre, mas age com suas próprias crenças sem se vincular ao bom senso, e confia muito em seus
-                    Companheiros!
+                    Companheiros! Ele quer ser o "Rei dos Piratas"
                 </div>
             </div>
         </div>
         <!-- Fim card Luffy -->
+        <!-- Início Zoro -->
+        <div class="card-Zoro">
+            <a href="#meu-modal2" id="modalZoro">
+                <img id="Zoro" src="Imagem/cardZoro.jpg" alt="Imagem-Zoro"></a>
+        </div>
+        <div id="meu-modal2" class="modal">
+            <div class="modal-content">
+                <div class="perfil"><img src="Imagem/Zoro.png" alt="Zoro"></div>
+                <div class="texto">
+                    <div class="informacoes">Nome: Roronoa Zoro</div>
+                    <div class="informacoes">Alcunha: Caçador de Piratas</div>
+                    <div class="informacoes">Recompensa: 1,111,000,000</div>
+                    <div class="informacoes">Aniversário: 11 de novembro</div>
+                </div>
+                <div class="detalhes">
+                    O primeiro membro dos Piratas do Chapéu de Palha, um espadachim que o Luffy tem muita confiança. Ele
+                    busca os oponentes mais fortes mesmo que coloque sua vida em risco. Ele quer se tornar o "Melhor
+                    Espadachim do Mundo"
+                </div>
+            </div>
+        </div>
+        <!-- Fim Card Zoro -->
+         <!-- Início Sanji -->
+         <div class="card-Sanji">
+            <a href="#meu-modal3" id="modalSanji">
+                <img id="Sanji" src="Imagem/cardSanji.jpg" alt="Imagem-Sanji"></a>
+        </div>
+        <div id="meu-modal3" class="modal">
+            <div class="modal-content">
+                <div class="perfil"><img src="Imagem/Sanji.png" alt="Sanji"></div>
+                <div class="texto">
+                    <div class="informacoes">Nome: Vinsmoke Sanji</div>
+                    <div class="informacoes">Alcunha: Perna Negra</div>
+                    <div class="informacoes">Recompensa: 1,032,000,000</div>
+                    <div class="informacoes">Aniversário: 02 de Março</div>
+                </div>
+                <div class="detalhes">
+                     Sua habilidade como Cozinheiro é de primeira classe. Não sabe apenas cozinhar, mas também sabe lutar com a técnica de chutes poderosa do seu mestre Zeff. Contra homens é impiedoso, mas contra mulheres é mortalmente vulnerável. Seu sonho é encontrar o mar lendário, “All Blue”.
+                </div>
+            </div>
+        </div>
+        <!-- Fim Card Sanji -->
     </div>
     <!-- Fim Banner -->
 
@@ -61,9 +106,24 @@
             modal.style.display = 'block';
         });
 
+        var linkModal2 = document.getElementById('modalZoro');
+        var modal2 = document.getElementById('meu-modal2');
+        linkModal2.addEventListener('click', function () {
+            modal2.style.display = 'block';
+        });
+
+        var linkModal3 = document.getElementById('modalSanji');
+        var modal3 = document.getElementById('meu-modal3');
+        linkModal3.addEventListener('click', function () {
+            modal3.style.display = 'block';
+        });
+
         window.onclick = function (event) {
-            if (event.target == modal) {
+            if (event.target == modal || event.target == modal2 || event.target == modal3) {
                 modal.style.display = "none";
+                modal2.style.display = "none";
+                modal3.style.display = "none";
             }
         }
+
     </script>
