@@ -1,267 +1,346 @@
-body{
-    margin: 0%;
-    font-family: 'Montserrat', sans-serif;
-      
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
+
 /* Início NavBar */
-.header {
-    /* position: fixed; */
-    display: flex;
-    width: 100%;
-    height: 96px;
-    border-bottom: 3px solid #ff0000;
-    background-color: #000000;    
-} 
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 
-.logo{    
-    display: flex;    
-    width: 80%;
-    height: 100px;    
-    justify-content: space-between;
-    align-self: flex-start;
-    margin-left: 8%;        
 }
 
-a {    
-    display: flex;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 25px;   
+.header {  
+  display: flex;
+  width: 100%;
+  height: 96px;
+  border-bottom: 3px solid #ff0000;
+  background-color: #000000;
+}
+
+.logo {
+  display: flex;
+  width: 80%;
+  height: 100px;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin-left: 8%;
+}
+
+a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 25px;
 }
 
 .navBar {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;   
-    margin-top: 3%;
+  width: 90%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2%;
+  position: relative;
+  right: 25%;
 }
 
 a:hover {
-    color: #ff0000;
-    transform: scale(1.05);
-    transition: 0.20s ease-in-out;
-  }
+  color: #ff0000;
+  transform: scale(1.05);
+  transition: 0.20s ease-in-out;
+}
 /* Fim NavBar */
 /* Início Banner */
-.container{
-    display: flex;
-    width: 100%;
-    height: 1000px;
-    background-image: url(../Imagem/Opção2.jpg);
-    background-size: cover; 
-    background-position: 50% 50%; 
+.container {
+  display: flex;
+  width: 100%;
+  height: 160vh;
+  background-image: url(../Imagem/Opção2.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-/* .container h1{
-    color: white;
-    text-align: center;
-    font-size: 50px;
-} */
+.container .titulo {
+  width: 100%;
+  height: 10%;
+  color: white;
+  text-align: center;
+  font-size: 80%;
+  position: relative;
+  left: 42%;  
+  top: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bolder;  
+}
 
+.Card{
+  display: flex;
+  width: 90%;
+  height: 150vh;
+  background-color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  top: 5%;
+  right: 15%;
+}
 /* Início Cards */
-.card-luffy{
-    display: flex;
-    width: 20%;
-    height: 48vh;   
-    background-size: cover;
-    background-position: 100%;
-    position: relative;
-    left: 7%;
-    top: 8%;
-}
-
-.card-Zoro{
+.card-luffy {
   display: flex;
   width: 20%;
-  height: 48vh;   
+  height: 48vh;
   background-size: cover;
   background-position: 100%;
   position: relative;
-  left: 10%;
-  top: 8%;  
-}
-
-.card-Sanji{
-  display: flex;
-  width: 20%;
-  height: 48vh;   
-  background-size: cover;
-  background-position: 100%;
-  position: relative;
-  left: 20%;
+  left: 8%;
   top: 8%;
 }
 
-.card-Jinbe{
+.card-Zoro {
   display: flex;
   width: 20%;
-  height: 48vh;   
+  height: 48vh;
   background-size: cover;
   background-position: 100%;
   position: relative;
-  left: 23%;
+  left: 12%;
   top: 8%;
 }
 
-.card-Nami{
+.card-Sanji {
   display: flex;
   width: 20%;
-  height: 48vh;   
+  height: 48vh;
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 62.5%;
-  top: 37%;
+  left: 22%;
+  top: 8%;
 }
 
-.card-Ussop{
+.card-Jinbe {
   display: flex;
   width: 20%;
-  height: 48vh;   
+  height: 48vh;
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 59.5%;
-  top: 37%;
+  left: 28%;
+  top: 8%;
 }
 
-.card-Robin{
+.card-Nami {
   display: flex;
   width: 20%;
-  height: 48vh;   
+  height: 48vh;
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 49.5%;
-  top: 37%;
+  right: 66.9%;
+  top: 39%;
 }
 
-.card-Brook{
+.card-Ussop {
   display: flex;
   width: 20%;
-  height: 48vh;   
+  height: 48vh;
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 46.5%;
-  top: 37%;
+  right: 62.8%;
+  top: 39%;
 }
 
-.card-Franky{
+.card-Robin {
   display: flex;
   width: 20%;
-  height: 48vh;   
+  height: 48vh;
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right : 132%;  
-  top: 65%;
+  right: 52.8%;
+  top: 39%;
 }
 
-.card-Chopper{
+.card-Brook {
   display: flex;
   width: 20%;
-  height: 48vh;   
+  height: 48vh;
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right : 129%;  
-  top: 65%;
+  right: 46.8%;
+  top: 39%;
 }
 
-.card-Shanks{
+.card-Franky {
   display: flex;
   width: 20%;
-  height: 48vh;   
+  height: 48vh;
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right : 119%;  
-  top: 65%;
+  right: 141.7%;
+  top: 68%;
 }
 
-.card-Roger{
+.card-Chopper {
   display: flex;
   width: 20%;
-  height: 48vh;   
+  height: 48vh;
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right : 116%;  
-  top: 65%;
+  right: 137.7%;
+  top: 68%;
 }
+
+.card-Shanks {
+  display: flex;
+  width: 20%;
+  height: 48vh;
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  right: 127.8%;
+  top: 68%;
+}
+
+.card-Roger {
+  display: flex;
+  width: 20%;
+  height: 48vh;
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  right: 121.5%;
+  top: 68%;
+}
+
 /* fim Cards */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    /* overflow: auto; */
-    background-color: rgba(0,0,0,0.4);    
-  }
-  
-  .modal-content {
-    width: 55%;
-    height: 55%;
-    margin: 15% auto;
-    background-color: #e6cb93;    
-    padding: 10px;      
-    border: 1px solid #888;
-    border-radius: 25px;
-    /* background-image: url(../Imagem/teste.jpg); */
-    background-size: cover;
-    background-position: 100%;
-  }
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  /* overflow: auto; */
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-  .perfil{
-    display: flex;
-    width: 35%;
-    height: 63%;
-    justify-content: end;
-    position: relative;
-    top: 3%;
-    left: 55%;
-    bottom: 15%;
-    background-size: cover;
-    background-position: 100%;
-  }
+.modal-content {
+  width: 55%;
+  height: 55%;
+  margin: 15% auto;
+  background-color: #e6cb93;
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 25px;  
+  background-size: cover;
+  background-position: 100%;
+}
 
-  .texto{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    position: relative;
-    bottom: 55%;
-    left: 5%;
-  }
+.perfil {
+  display: flex;
+  width: 35%;
+  height: 63%;
+  justify-content: end;
+  position: relative;
+  top: 3%;
+  left: 55%;
+  bottom: 15%;
+  background-size: cover;
+  background-position: 100%;
+}
 
-  .informacoes{
-    display: flex;
-    flex-direction: row;    
-    width: fit-content;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    position: relative;    
-    top: 0%;
-    left: 3%;
-    bottom: 15%;
-    margin: 2%;
-  }
+.texto {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  position: relative;
+  bottom: 55%;
+  left: 5%;
+}
 
-  .detalhes{
-    width: 90%;
-    height: 27%;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;   
-    font-weight: bold; 
-    padding: 5%;
-    position: relative;
-    bottom: 53%;
-  }  
+.informacoes {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 0%;
+  left: 3%;
+  bottom: 15%;
+  margin: 2%;
+}
+
+.detalhes {
+  width: 90%;
+  height: 27%;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 5%;
+  position: relative;
+  bottom: 53%;
+}
+
+/* Início Footer */
+.footer{  
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  border-top: 3px solid #ff0000;
+  background-color: #000000;    
+} 
+
+.logo{    
+  display: flex;    
+  width: 80%;
+  height: 100px;    
+  justify-content: space-between;
+  align-self: flex-start;
+  margin-left: 5%;        
+}
+
+.copy{
+  display: flex;
+  height: 20%;
+  width: 150%;
+  position: relative;
+  top: 35%;
+  left: 20%;
+}
+
+.copy p{
+  font-size: 100%;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-content{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  position: relative;
+  right: 50%;
+}
+
+a:hover {
+  color: #ff0000;
+  transform: scale(1.05);
+  transition: 0.20s ease-in-out;
+}
+
+/* Fim Footer */

@@ -1,49 +1,48 @@
-body{
-    margin: 0%;
+body {
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
-      
+
 }
+
 .header {
     position: fixed;
     display: flex;
     width: 100%;
     height: 96px;
     border-bottom: 3px solid #ff0000;
-    background-color: #000000;    
-} 
-
-.logo{    
-    display: flex;    
-    width: 80%;
-    height: 100px;    
-    justify-content: space-between;
-    align-self: flex-start;
-    margin-left: 8%;        
+    background-color: #000000;
 }
 
-a {    
+.logo {
+    display: flex;
+    width: 80%;
+    height: 100px;
+    justify-content: space-between;
+    align-self: flex-start;
+    margin-left: 8%;
+}
+
+a {
     display: flex;
     color: white;
     text-decoration: none;
     font-size: 20px;
-    margin: 25px;   
+    margin: 25px;
 }
 
 .navBar {
-    width: 100%;
+    width: 90%;
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;   
-    margin-top: 3%;
+    justify-content: space-around;
+    margin-top: 2%;
+    position: relative;
+    right: 25%;
 }
 
 a:hover {
     color: #ff0000;
     transform: scale(1.05);
     transition: 0.20s ease-in-out;
-  }
-  
-
-
-
+}
