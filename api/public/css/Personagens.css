@@ -50,9 +50,9 @@ a:hover {
     display: flex;
     width: 100%;
     height: 1000px;
-    background-image: url(../Imagem/Login.jpg);
+    background-image: url(../Imagem/Opção2.jpg);
     background-size: cover; 
-    /* background-position: 100%;  */
+    background-position: 50% 50%; 
 }
 
 /* .container h1{
@@ -61,7 +61,7 @@ a:hover {
     font-size: 50px;
 } */
 
-/* Cards */
+/* Início Cards */
 .card-luffy{
     display: flex;
     width: 20%;
@@ -69,8 +69,8 @@ a:hover {
     background-size: cover;
     background-position: 100%;
     position: relative;
-    left: 15%;
-    margin-top: 5%;
+    left: 7%;
+    top: 8%;
 }
 
 .card-Zoro{
@@ -80,8 +80,8 @@ a:hover {
   background-size: cover;
   background-position: 100%;
   position: relative;
-  left: 15%;
-  margin-top: 5%;  
+  left: 10%;
+  top: 8%;  
 }
 
 .card-Sanji{
@@ -91,8 +91,107 @@ a:hover {
   background-size: cover;
   background-position: 100%;
   position: relative;
-  left: 15%;
-  margin-top: 5%;
+  left: 20%;
+  top: 8%;
+}
+
+.card-Jinbe{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  left: 23%;
+  top: 8%;
+}
+
+.card-Nami{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  right: 62.5%;
+  top: 37%;
+}
+
+.card-Ussop{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  right: 59.5%;
+  top: 37%;
+}
+
+.card-Robin{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  right: 49.5%;
+  top: 37%;
+}
+
+.card-Brook{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  right: 46.5%;
+  top: 37%;
+}
+
+.card-Franky{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  right : 132%;  
+  top: 65%;
+}
+
+.card-Chopper{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  right : 129%;  
+  top: 65%;
+}
+
+.card-Shanks{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  right : 119%;  
+  top: 65%;
+}
+
+.card-Roger{
+  display: flex;
+  width: 20%;
+  height: 48vh;   
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  right : 116%;  
+  top: 65%;
 }
 /* fim Cards */
 .modal {
@@ -109,7 +208,7 @@ a:hover {
   
   .modal-content {
     width: 55%;
-    height: 50%;
+    height: 55%;
     margin: 15% auto;
     background-color: #e6cb93;    
     padding: 10px;      
@@ -122,12 +221,12 @@ a:hover {
 
   .perfil{
     display: flex;
-    width: 30%;
-    height: 60%;
+    width: 35%;
+    height: 63%;
     justify-content: end;
     position: relative;
-    top: 1%;
-    left: 50%;
+    top: 3%;
+    left: 55%;
     bottom: 15%;
     background-size: cover;
     background-position: 100%;
@@ -138,7 +237,7 @@ a:hover {
     flex-direction: column;
     width: 40%;
     position: relative;
-    bottom: 50%;
+    bottom: 55%;
     left: 5%;
   }
 
@@ -164,24 +263,5 @@ a:hover {
     font-weight: bold; 
     padding: 5%;
     position: relative;
-    bottom: 50%;
-  }
-
-  
-
-  /* Início Botão close */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  /* Fim botão close */
-  
+    bottom: 53%;
+  }  
