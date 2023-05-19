@@ -43,7 +43,7 @@ a {
   justify-content: space-around;
   margin-top: 2%;
   position: relative;
-  right: 25%;
+  right: 20%;
 }
 
 a:hover {
@@ -138,7 +138,7 @@ a:hover {
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 66.9%;
+  right: 69.5%;
   top: 39%;
 }
 
@@ -149,7 +149,7 @@ a:hover {
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 62.8%;
+  right: 65.5%;
   top: 39%;
 }
 
@@ -160,7 +160,7 @@ a:hover {
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 52.8%;
+  right: 55%;
   top: 39%;
 }
 
@@ -171,7 +171,7 @@ a:hover {
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 46.8%;
+  right: 49.5%;
   top: 39%;
 }
 
@@ -182,7 +182,7 @@ a:hover {
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 141.7%;
+  right: 146.7%;
   top: 68%;
 }
 
@@ -193,7 +193,7 @@ a:hover {
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 137.7%;
+  right: 142.7%;
   top: 68%;
 }
 
@@ -204,7 +204,7 @@ a:hover {
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 127.8%;
+  right: 132.2%;
   top: 68%;
 }
 
@@ -215,7 +215,7 @@ a:hover {
   background-size: cover;
   background-position: 100%;
   position: relative;
-  right: 121.5%;
+  right: 126.7%;
   top: 68%;
 }
 
@@ -242,6 +242,7 @@ a:hover {
   border-radius: 25px;  
   background-size: cover;
   background-position: 100%;
+  box-shadow: 10px 5px 55px 15px rgb(0, 0, 0);
 }
 
 .perfil {
@@ -315,7 +316,7 @@ a:hover {
   width: 150%;
   position: relative;
   top: 35%;
-  left: 20%;
+  left: 27%;
 }
 
 .copy p{
@@ -334,13 +335,32 @@ a:hover {
   flex-direction: column;
   align-items: center;  
   position: relative;
-  right: 50%;
+  right: 42%;
 }
 
 a:hover {
   color: #ff0000;
   transform: scale(1.05);
   transition: 0.20s ease-in-out;
+}  
+/* Fim Footer */
+ /* Scroll */
+ ::-webkit-scrollbar {
+  width: 0.55rem;
 }
 
-/* Fim Footer */
+/* Estilo da trilha */
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+/* Estilo do polegar */
+::-webkit-scrollbar-thumb {  
+  background-color: #ff0000;    
+  border-radius: 1rem;
+}
+
+/* Estilo do polegar quando o mouse está sobre ele */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff00008d;   
+}
