@@ -3,27 +3,112 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: black;
-  }
+}
 
 /* Início Imagem */
 .containerB {
     display: flex;
     width: 100%;
     height: 700px;
-    background-image: url(../Imagem/Home.png);
-    background-size: cover; 
-    background-position: 70%;      
+    background-image: url(../Imagem/Home.jpg);
+    background-size: cover;
+    background-position:  100% 100%;    
 }
+
 .containerB .conteudo {
     display: flex;
-    font-size: 75px;    
+    font-size: 75px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-left: 20%;
     margin-top: 35%;
 }
+
 /* Fim Imagem */
 
-/* Início  */
-/* Fim */
+/* Início Social */
+.social {
+    background-color: #ffffffeb;
+    height: 48rem;
+    width: 99.8%;
+    padding: 1px;    
+}
+
+.social h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.socialDesc {
+    text-align: justify;
+    display: flex;
+    margin-left: 37rem;      
+    height: 28rem;
+    width: 40rem;
+    padding: 1.5rem;
+    background-color: transparent;
+    color: black;       
+}
+
+.socialText {
+    height: 30rem;
+    width: 40rem;   
+    line-height: 2rem; 
+    margin-top: 3rem; 
+}
+
+.titleSocial {        
+    font-size: 2.15rem;    
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;        
+}
+
+.socialText p{
+    font-size: 1.2rem;    
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; 
+    margin-top: 3.5rem; 
+}
+
+.socialText a {    
+    width: 6.5rem;
+    color: #ff0000;    
+    font-size: 1.2rem;   
+    font-family: 'Montserrat', sans-serif;  
+    position: relative;
+    left: 30.8rem;
+    bottom: 3.6rem;
+}
+
+/* Início Carrossel */
+#carrossel {
+    height: 35rem;
+    width: 26rem;
+    margin-left: 7rem;    
+    position: relative;
+    bottom: 30rem;
+    border-radius: 1rem;
+    box-shadow: 8px 3px 30px 10px rgba(0, 0, 0, 0.391);
+}
+
+#carrossel img {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1.5s;
+    border-radius: 1rem;
+}
+
+#carrossel img.atual {
+    opacity: 1;
+}
+/* Fim Carrossel */
+/* Fim Social */
