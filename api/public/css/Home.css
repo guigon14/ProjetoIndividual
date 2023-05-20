@@ -12,7 +12,7 @@ body {
     height: 700px;
     background-image: url(../Imagem/Home.jpg);
     background-size: cover;
-    background-position:  100% 100%;    
+    background-position: 100% 100%;
 }
 
 .containerB .conteudo {
@@ -32,7 +32,7 @@ body {
     background-color: #ffffffeb;
     height: 48rem;
     width: 99.8%;
-    padding: 1px;    
+    padding: 1px;
 }
 
 .social h1 {
@@ -46,41 +46,41 @@ body {
 .socialDesc {
     text-align: justify;
     display: flex;
-    margin-left: 37rem;      
+    margin-left: 37rem;
     height: 28rem;
     width: 40rem;
     padding: 1.5rem;
     background-color: transparent;
-    color: black;       
+    color: black;
 }
 
 .socialText {
     height: 30rem;
-    width: 40rem;   
-    line-height: 2rem; 
-    margin-top: 3rem; 
+    width: 40rem;
+    line-height: 2rem;
+    margin-top: 3rem;
 }
 
-.titleSocial {        
-    font-size: 2.15rem;    
+.titleSocial {
+    font-size: 2.15rem;
     color: black;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;        
+    font-family: 'Montserrat', sans-serif;
 }
 
-.socialText p{
-    font-size: 1.2rem;    
+.socialText p {
+    font-size: 1.2rem;
     color: black;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif; 
-    margin-top: 3.5rem; 
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3.5rem;
 }
 
-.socialText a {    
+.socialText a {
     width: 6.5rem;
-    color: #ff0000;    
-    font-size: 1.2rem;   
-    font-family: 'Montserrat', sans-serif;  
+    color: #ff0000;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     left: 30.8rem;
     bottom: 3.6rem;
@@ -88,9 +88,9 @@ body {
 
 /* Início Carrossel */
 #carrossel {
-    height: 35rem;
+    height: 33rem;
     width: 26rem;
-    margin-left: 7rem;    
+    margin-left: 7rem;
     position: relative;
     bottom: 30rem;
     border-radius: 1rem;
@@ -103,12 +103,64 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 1.5s;
+    transition: opacity 2s;
     border-radius: 1rem;
 }
 
 #carrossel img.atual {
     opacity: 1;
 }
+
 /* Fim Carrossel */
-/* Fim Social */
+
+/* Início Trilha */
+.aberturas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 35rem;
+    background-color: #ffffffeb;
+}
+
+.aberturas h1 {
+    text-align: center;
+    font-size: 2.15rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    bottom: 1.8rem;
+}
+
+.aberturas h2 {
+    text-align: justify;
+    height: 5rem;
+    width: 76rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    position: relative;
+    bottom: 2.5rem;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    bottom: 1rem;
+}
+
+.video {
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+iframe {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 2.5rem; 
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.314);   
+}
+
+/* Fim Trilha */

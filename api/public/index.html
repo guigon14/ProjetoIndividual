@@ -42,7 +42,12 @@
       <div class="socialText">
         <span class="titleSocial">Explore o mundo épico de One Piece</span>
         <label>
-          <p>Mergulhe em aventuras emocionantes, descubra segredos ocultos e desvende a grandiosa história dos piratas. Embarque em uma aventura única através dos mares perigosos, junte-se a uma tripulação lendária e desvende os segredos de um mundo repleto de mistérios. Seja um verdadeiro fã e explore nosso site temático sobre One Piece, onde você encontrará informações, teorias intrigantes e curiosidades fascinantes. Prepare-se para se apaixonar por essa história épica que conquistou milhões de corações ao redor do mundo. Venha navegar conosco rumo à Grand Line em busca do tesouro supremo One Piece<a href="Cadastro.html">Faça Parte</a></p>
+          <p>Mergulhe em aventuras emocionantes, descubra segredos ocultos e desvende a grandiosa história dos piratas.
+            Embarque em uma aventura única através dos mares perigosos, junte-se a uma tripulação lendária e desvende os
+            segredos de um mundo repleto de mistérios. Seja um verdadeiro fã e explore nosso site temático sobre One
+            Piece, onde você encontrará informações, teorias intrigantes e curiosidades fascinantes. Prepare-se para se
+            apaixonar por essa história épica que conquistou milhões de corações ao redor do mundo. Venha navegar
+            conosco rumo à Grand Line em busca do tesouro supremo One Piece<a href="Cadastro.html">Faça Parte</a></p>
         </label>
       </div>
     </div>
@@ -60,6 +65,32 @@
     </div>
   </div>
   <!-- Fim Social -->
+  <!-- Início Aberturas -->
+  <div class="aberturas">
+    <h1>Aberturas memoráveis:</h1>
+    <h2>Por ser um anime longo, One Piece apresenta várias aberturas que conquistam os corações dos fãs. Embora cada
+      pessoa tenha sua preferida, aqui selecionamos as que são amadas pela grande maioria:</h2>
+    <div class="videos">
+      
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/dM7x1PNZDo0" frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/fCQufN8Wsgc" frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+      </div><div class="video">
+        <iframe src="https://www.youtube.com/embed/PwVT67T5Xt4" frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Aberturas -->
   <!-- Início Footer -->
   <div class="footer">
     <div class="logo">
@@ -79,28 +110,28 @@
 
 </html>
 <script>
-     //Código do carrossel
-     var currentImageIndex = 0;
-    var images = document.querySelectorAll("#carrossel img");
-    var maxImages = images.length;
+  //Código do carrossel
+  var currentImageIndex = 0;
+  var images = document.querySelectorAll("#carrossel img");
+  var maxImages = images.length;
 
-    const nextImage = () => {
-        images[currentImageIndex].classList.remove("atual");
+  const nextImage = () => {
+    images[currentImageIndex].classList.remove("atual");
 
-        currentImageIndex++;
+    currentImageIndex++;
 
-        if (currentImageIndex >= maxImages) {
-            currentImageIndex = 0;
-        }
-
-        images[currentImageIndex].classList.add("atual");
+    if (currentImageIndex >= maxImages) {
+      currentImageIndex = 0;
     }
 
-    const start = () => {
-        setInterval(() => {
-            nextImage();
-        }, 5000);
-    }
+    images[currentImageIndex].classList.add("atual");
+  }
 
-    window.addEventListener("load", start())
+  const start = () => {
+    setInterval(() => {
+      nextImage();
+    }, 4000);
+  }
+
+  window.addEventListener("load", start())
 </script>
