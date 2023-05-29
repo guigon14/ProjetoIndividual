@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curiosidades</title>  
   <link rel="shortcut icon" href="../Imagem/Chapeu.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/Curiosidades.css">
+  <link rel="stylesheet" href="Curiosidades.css">
   <link rel="stylesheet" href="../css/NavBar.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
@@ -16,9 +16,10 @@
   <!-- Início NavBar -->
   <div class="header">
     <div class="logo">
-      <a href="index.html"><img src="../Imagem/Caveira.png" alt="Caveira"
-          style="height: 100px; margin-top: -20%; margin-left: 80%"></a>
+      <a href="Curiosidades.html"><img src="../Imagem/Caveira.png" alt="Caveira"
+          style="height: 100px; margin-top: -25%; margin-left: 60%"></a>
     </div>
+    <span id="nomeU" class="nome">Olá, </span>
     <ul class="navBar">
         <li><a href="Curiosidades.html">Curiosidades</a></li>
         <li><a href="Quiz.html">Quiz</a></li>
@@ -26,3 +27,40 @@
     </ul>
   </div>
   <!-- Fim NavBar -->
+  <!-- Início Curiosidades -->
+  <div class="container">
+    <div class="curiosidade1">
+      <h1>Curiosidade 1</h1>
+      <div class="imgT1"><img src="../Imagem/Teach.png" alt=""></div>
+      <div class="textoc1"></div>
+    </div>
+    <div class="curiosidade2">
+      <h1>Curiosidade 2</h1>
+      <div class="imgT2"><img src="../Imagem/BarbaBranca.png" alt=""></div>
+      <div class="textoc2"></div>
+    </div>
+    <div class="curiosidade3">
+      <h1>Curiosidade 3</h1>
+      <div class="imgT3"><img src="../Imagem/Shanks.png" alt=""></div>
+      <div class="textoc3"></div>
+    </div>
+  </div>
+  <!-- Fim Curiosidades -->
+  <!-- Início Footer -->
+  <!-- <div class="footer">
+    <div class="logo">
+      <a href="index.html"><img src="../Imagem/LogoOP.png" alt="Caveira"
+          style="height: 180%;margin-top: 10%; margin-left: 25%;"></a>
+    </div>
+    <div class="copy">
+      <p>copyright&copy; 2023. Developed by Guilherme Gonçalves</p>
+    </div>
+    <ul class="footer-content">
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="Cadastro.html">Cadastro</a></li>
+    </ul>
+  </div> -->
+  <!-- Fim Footer -->
+  <script>
+    nomeU.innerHTML += sessionStorage.NOME_USUARIO;
+  </script>
