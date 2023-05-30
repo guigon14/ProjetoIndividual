@@ -2,147 +2,270 @@ body {
     margin: 0;
 }
 
-.container{
-    background-color: #ffffffeb;
-    height: 100rem;
+.container {
+    background-color: #f5f2f2eb;
+    height: 123.4rem;
     width: 99.8%;
     padding: 1px;
 }
 
-.curiosidade1{
-height: 20rem;
-width: 90%;
-background-color: black;
-position: relative;
-top: 10rem;
-left: 4.5rem;
+.curiosidade1 {
+    height: 20rem;
+    width: 90%;
+    background-color: #d1cece8c;
+    position: relative;
+    top: 4rem;
+    left: 8.3rem;
+    border-bottom-left-radius: 5rem;
+    box-shadow: 1rem 0px 1rem 1rem rgba(0, 0, 0, 0.491);
 }
 
-.curiosidade1 h1{
+.curiosidade1 h1 {
     text-align: center;
     font-size: 2rem;
     margin-top: 1.5rem;
-    color: white;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     position: relative;
     top: 2rem;
 }
 
-.curiosidade1 .imgT1{
+.curiosidade1 .imgT1 {
+    display: flex;
+    width: 15rem;
+    height: 14rem;
+    justify-content: end;
+    position: relative;
+    top: 1rem;
+    left: 5rem;
+    bottom: 1rem;
+    background-image: url(../Imagem/Oda.jpg);
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 1.5rem;
+}
+
+.curiosidade1 .textoc1 {
+    color: black;
+    display: flex;
+    height: 10rem;
+    width: 65%;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 21.5rem;
+    bottom: 12rem;
+    margin: 2%;
+}
+
+.curiosidade2 {
+    height: 23rem;
+    width: 90%;
+    background-color: #d1cece8c;
+    position: relative;
+    top: 5rem;
+    right: 4.5rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    box-shadow: 1rem 0px 1rem 1rem rgba(0, 0, 0, 0.491);
+}
+
+.curiosidade2 h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: Black;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 2rem;
+}
+
+.curiosidade2 .imgT2 {
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+    justify-content: end;
+    position: relative;
+    top: 1rem;
+    left: 58rem;
+    bottom: 15%;
+    background-image: url(../Imagem/Memorial.jpg);
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 1.5rem;
+}
+
+.curiosidade2 .textoc2 {
+    text-align: justify;    
+    color: black;
+    display: flex;
+    height: 10rem;
+    width: 70%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5em;
+    position: relative;
+    left: 3.5rem;
+    bottom: 15rem;
+    margin: 2%;
+}
+
+.curiosidade3 {
+    height: 23rem;
+    width: 90%;
+    background-color: #d1cece8c;
+    position: relative;
+    top: 5rem;
+    left: 8.3rem;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem; 
+    box-shadow: 1rem 0px 1rem 1rem rgba(0, 0, 0, 0.491);
+}
+
+.curiosidade3 h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 2rem;
+}
+
+.curiosidade3 .imgT3 {
+    display: flex;
+    width: 18rem;
+    height: 15rem;
+    justify-content: end;
+    position: relative;    
+    left: 2rem;
+    top: 2rem;
+    background-image: url(../Imagem/Armani.png);
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 1.5rem;
+}
+
+.curiosidade3 .textoc3 {
+    text-align: justify;    
+    color: black;
+    display: flex;
+    height: 14rem;
+    width: 70%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5em;
+    position: relative;
+    left: 19.5rem;
+    bottom: 13.5rem;
+    margin: 2%;
+}
+
+.curiosidade4 {
+    height: 25rem;
+    width: 90%;
+    background-color: #d1cece8c;
+    position: relative;
+    top: 5rem;
+    right: 4.5rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    box-shadow: 1rem 0px 1rem 1rem rgba(0, 0, 0, 0.491);
+}
+
+.curiosidade4 h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 2rem;
+}
+
+.curiosidade4 .imgT4 {
+    display: flex;
+    width: 25rem;
+    height: 15rem;
+    justify-content: end;
+    position: relative;
+    top: 3rem;
+    left: 47rem;
+    bottom: 15%;
+    background-image: url(../Imagem/DragonBall.jpg);
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 1.5rem;
+}
+
+.curiosidade4 .textoc4 {
+    text-align: justify;
+    color: black;
+    display: flex;
+    height: 10rem;
+    width: 55%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5em;
+    position: relative;
+    left: 4rem;
+    bottom: 13rem;
+    margin: 2%;
+}
+
+.curiosidade5 {
+    height: 20rem;
+    width: 90%;
+    background-color: #d1cece8c;
+    position: relative;
+    top: 5rem;
+    left: 8.3rem;
+    box-shadow: 1rem 0px 1rem 1rem rgba(0, 0, 0, 0.491);
+    border-top-left-radius: 5rem;
+}
+
+.curiosidade5 h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 2rem;
+}
+
+.curiosidade5 .imgT5 {
     display: flex;
     width: 20rem;
     height: 15rem;
     justify-content: end;
     position: relative;
     top: 1rem;
-    right: 0rem;
+    left: 2rem;
     bottom: 15%;
+    background-image: url(../Imagem/5anos.jpg);
     background-size: cover;
     background-position: 100%;
+    border-radius: 1.5rem;
 }
 
-.curiosidade1 .textoc1{
-    background-color: aliceblue;
-    display: flex;    
+.curiosidade5 .textoc5 {
+    text-align: justify;
+    color: black;
+    display: flex;
     height: 10rem;
     width: 65%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    line-height: 1.5em;
     position: relative;
     left: 21.5rem;
-    bottom: 13rem;
+    bottom: 12rem;
     margin: 2%;
 }
-
-.curiosidade2{
-    height: 20rem;
-    width: 90%;
-    background-color: black;
-    position: relative;
-    top: 10rem;
-    left: 4.5rem;
-    }
-    
-    .curiosidade2 h1{
-        text-align: center;
-        font-size: 2rem;
-        margin-top: 1.5rem;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        position: relative;
-        top: 2rem;
-    }
-    
-    .curiosidade2 .imgT2{
-        display: flex;
-        width: 20rem;
-        height: 15rem;
-        justify-content: end;
-        position: relative;
-        top: 1rem;
-        left: 52rem;
-        bottom: 15%;
-        background-size: cover;
-        background-position: 100%;
-    }
-    
-    .curiosidade2 .textoc2{
-        background-color: aliceblue;
-        display: flex;    
-        height: 10rem;
-        width: 65%;
-        font-size: 1.2rem;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        position: relative;
-        right: 0rem;
-        bottom: 13rem;
-        margin: 2%;
-    }
-
-    .curiosidade3{
-        height: 20rem;
-        width: 90%;
-        background-color: black;
-        position: relative;
-        top: 10rem;
-        left: 4.5rem;
-        }
-        
-        .curiosidade3 h1{
-            text-align: center;
-            font-size: 2rem;
-            margin-top: 1.5rem;
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            position: relative;
-            top: 2rem;
-        }
-        
-        .curiosidade3 .imgT3{
-            display: flex;
-            width: 20rem;
-            height: 15rem;
-            justify-content: end;
-            position: relative;
-            top: 1rem;
-            right: 0rem;
-            bottom: 15%;
-            background-size: cover;
-            background-position: 100%;
-        }
-        
-        .curiosidade3 .textoc3{
-            background-color: aliceblue;
-            display: flex;    
-            height: 10rem;
-            width: 65%;
-            font-size: 1.2rem;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            position: relative;
-            left: 21.5rem;
-            bottom: 13rem;
-            margin: 2%;
-        }

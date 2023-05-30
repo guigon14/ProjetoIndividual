@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teorias</title>
   <link rel="shortcut icon" href="../Imagem/Chapeu.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/Teorias.css">
+  <link rel="stylesheet" href="Teorias.css">
   <link rel="stylesheet" href="../css/NavBar.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
@@ -16,17 +16,30 @@
   <!-- Início NavBar -->
   <div class="header">
     <div class="logo">
-      <a href="index.html"><img src="../Imagem/Caveira.png" alt="Caveira"
-          style="height: 100px; margin-top: -25%; margin-left: 0%"></a>
+      <a href="Teorias.html"><img src="../Imagem/Caveira.png" alt="Caveira"
+          style="height: 100px; margin-top: -25%; margin-left: 60%"></a>
     </div>
     <span id="nomeU" class="nome">Olá, </span>
     <ul class="navBar">
       <li><a href="Curiosidades.html">Curiosidades</a></li>
       <li><a href="Quiz.html">Quiz</a></li>
-      <li><a href="Teorias.html">Teorias</a></li>      
+      <li><a href="Teorias.html">Teorias</a></li>
     </ul>
   </div>
   <!-- Fim NavBar -->
+  <!-- Início Social -->
+  <div class="imagem"></div>
+  <div id="container" class="container">
+    <h1>Teorias</h1>
+    <span>Uma das características marcantes de One Piece é a presença de inúmeros mistérios que instigam a imaginação dos fãs. Esses enigmas têm despertado a criatividade dos fãs, levando-os a criar teorias com o objetivo de desvendá-los. Nesta seção, apresentamos algumas teorias fascinantes sobre os maiores mistérios de One Piece. Acompanhe-nos nessa jornada repleta de especulações e descubra as possíveis respostas por trás dos segredos mais intrigantes deste mundo épico!</span>
+    <button onclick="mostrar1()">Sobre o Século Perdido</button>
+    <button onclick="mostrar2()">Sobre os ".D"</button>
+    <button onclick="mostrar3()">Akuma no Mi</button>
+    <div id="resultado" class="card">
+      <div id="texto" class="textoC"></div>
+    </div>
+  </div>
+  <!-- Fim Social -->
   <!-- Início Footer -->
   <div class="footer">
     <div class="logo">
@@ -44,4 +57,31 @@
   <!-- Fim Footer -->
   <script>
     nomeU.innerHTML += sessionStorage.NOME_USUARIO;
+
+    function mostrar1() {
+      var mudanca = document.getElementById('container');      
+      mudanca.style.height = '120vh';
+
+      resultado.style.display = 'block';
+      texto.innerHTML = `        
+      Uma das teorias mais intrigantes em One Piece é a do "Século Perdido". Segundo essa teoria, existiu um período na história do mundo de One Piece que foi apagado ou ocultado dos registros conhecidos. Acredita-se que durante esse Século Perdido ocorreram eventos cruciais que moldaram o mundo atual, como a criação dos Frutos do Diabo, a batalha entre os antigos reinos e a fundação do Governo Mundial. Alguns especulam que esse período está diretamente ligado ao verdadeiro significado do One Piece e à natureza dos D., a misteriosa inicial compartilhada por alguns personagens. Essa teoria alimenta a curiosidade dos fãs, que estão ansiosos por descobrir a verdade por trás do Século Perdido e seu impacto na história do mundo de One Piece.
+      `
+    }
+    function mostrar2() {
+      var mudanca = document.getElementById('container');      
+      mudanca.style.height = '120vh';
+      resultado.style.display = 'block';
+      texto.innerHTML = `        
+      A teoria diz que o “D” seria uma abreviação de Dawn Pirates (Piratas do Amanhecer), um bando pirata que era liderado por Joy Boy. Então, aqueles que carregam “A vontade dos D.” seriam descendentes dos Dawn Pirates. Além disso, a teoria também usa o Jaguar D. Saul para imaginar a possível identidade do primeiro Joy Boy.De acordo com a teoria, o nome original de Joy Boy era Jaguar Binks, que era um gigante de Elbaf. Como ele seria um gigante, a ideia diz que o chapéu de palha de Mariejois pertencia a Joy Boy. Enfim, o nome de “Jaguar Binks” foi pensado em referência à música Binks’ Sake.
+      `
+    }
+    function mostrar3() {
+      var mudanca = document.getElementById('container');      
+      mudanca.style.height = '120vh';
+
+      resultado.style.display = 'block';
+      texto.innerHTML = `        
+      Os personagens de One Piece foram usados como modelos animados para a empresa  AX Armani Exchange, pertencente ao famoso designer de moda italiano Giorgio Armani. Em 2009, a empresa uniu forças com o estúdio Toei para promover o 10º filme da franquia de One Piece: Strong World. Luffy tornou-se o primeiro personagem de mangá a aparecer na capa da revista de moda japonesa Mens Non-no em seus 24 anos de publicação. A parceria voltou em 2012 para o lançamento do longa One Piece Film Z. Desta vez, os personagens usavam roupas projetadas pela AX Armani Exchange que foram selecionadas pelo próprio Oda. Para ampliar a promoção cruzada, estas roupas foram disponibilizadas para compra também! 
+      `
+    }
   </script>

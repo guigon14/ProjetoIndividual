@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+.imagem{
+    position: relative;
+    top: 2.2rem;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Imagem/Teorias.jpg);
+    background-size: cover;
+    background-position: 100%;    
+}
+
+.container {    
+    background-color: #f5f2f2eb;
+    height: 70vh;
+    width: 99.8%;
+    padding: 1px;    
+}
+
+.container button{
+    border: 0.2rem #f7f7f7 solid;
+    height: 3rem;
+    width: 50%;    
+    background-color: black;
+    color: white;
+    justify-content: center;
+    position: relative;
+    left: 20rem;
+    bottom: 6rem;   
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 0.5rem;
+}
+
+.card {
+    display: none;
+    width: 85%;
+    height: 15rem;    
+    background-color: transparent;
+    padding: 10px;    
+    position: relative;
+    left: 6rem;    
+    bottom: 5rem;
+    border-radius: 2.5rem;
+    /* border: 1px solid #242323; */
+    box-shadow: 0.1rem 0.1rem 0.5rem 0rem rgba(0, 0, 0, 0.491);
+    transition: width 0.5s, height 0.5s;   
+}
+
+ h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: Black;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 2rem;
+}
+.container span{
+    text-align: justify;    
+    color: black;
+    display: flex;
+    height: 15rem;
+    width: 95%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5em;
+    position: relative;
+    left: 2rem;   
+    top: 2rem;
+}
+.card .textoC{
+    text-align: justify;    
+    color: black;
+    display: flex;
+    height: 15rem;
+    width: 95%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5em;
+    position: relative;
+    left: 0.5rem;   
+    margin: 2%;
+}
+
+button:hover {
+    color: #ff0000;
+    transform: scale(1.05);
+    transition: 0.20s ease-in-out;
+}
+
