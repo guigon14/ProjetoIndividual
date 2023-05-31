@@ -8,7 +8,7 @@
   <title>Teorias</title>
   <link rel="shortcut icon" href="../Imagem/Chapeu.png" type="image/x-icon">
   <link rel="stylesheet" href="Teorias.css">
-  <link rel="stylesheet" href="../css/NavBar.css">
+  <link rel="stylesheet" href="NavBarDash.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
@@ -17,14 +17,15 @@
   <div class="header">
     <div class="logo">
       <a href="Teorias.html"><img src="../Imagem/Caveira.png" alt="Caveira"
-          style="height: 100px; margin-top: -25%; margin-left: 60%"></a>
+          style="height: 100px; margin-top: -25%; margin-left: 20%"></a>
     </div>
     <span id="nomeU" class="nome">Olá, </span>
     <ul class="navBar">
       <li><a href="Curiosidades.html">Curiosidades</a></li>
       <li><a href="Quiz.html">Quiz</a></li>
-      <li><a href="Teorias.html">Teorias</a></li>
-    </ul>
+      <li><a href="Teorias.html">Teorias</a></li>      
+    </ul> 
+    <button onclick="sair()" class="btnavBar">LogOut</button>
   </div>
   <!-- Fim NavBar -->
   <!-- Início Social -->
@@ -50,14 +51,14 @@
       <p>copyright&copy; 2023. Developed by Guilherme Gonçalves</p>
     </div>
     <ul class="footer-content">
-      <li><a href="Login.html">Login</a></li>
-      <li><a href="Cadastro.html">Cadastro</a></li>
+      <li><a href="Quiz.html">Quiz</a></li>
+      <li><a href="Curiosidades.html">Curiosidades</a></li>      
     </ul>
   </div>
   <!-- Fim Footer -->
   <script>
     nomeU.innerHTML += sessionStorage.NOME_USUARIO;
-
+    
     function mostrar1() {
       var mudanca = document.getElementById('container');      
       mudanca.style.height = '120vh';
@@ -83,5 +84,8 @@
       texto.innerHTML = `        
       Os personagens de One Piece foram usados como modelos animados para a empresa  AX Armani Exchange, pertencente ao famoso designer de moda italiano Giorgio Armani. Em 2009, a empresa uniu forças com o estúdio Toei para promover o 10º filme da franquia de One Piece: Strong World. Luffy tornou-se o primeiro personagem de mangá a aparecer na capa da revista de moda japonesa Mens Non-no em seus 24 anos de publicação. A parceria voltou em 2012 para o lançamento do longa One Piece Film Z. Desta vez, os personagens usavam roupas projetadas pela AX Armani Exchange que foram selecionadas pelo próprio Oda. Para ampliar a promoção cruzada, estas roupas foram disponibilizadas para compra também! 
       `
+    }
+    function sair(){      
+      window.location = "../index.html"
     }
   </script>

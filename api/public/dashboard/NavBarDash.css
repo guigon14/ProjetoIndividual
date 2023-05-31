@@ -38,7 +38,7 @@ a {
     justify-content: space-around;
     margin-top: 2%;
     position: relative;
-    right: 23%;       
+    right: 18%;       
 }
 
 .nome{
@@ -50,7 +50,7 @@ a {
   color: white;
   position: relative;
   top: 2.55rem;
-  right: 13rem;
+  right: 14rem;
 }
 
 .btnavBar{
@@ -60,11 +60,11 @@ a {
   border-radius: 0.5rem; 
   color: white;
   text-decoration: none;
-  box-shadow: 1px 1px 1px 1px #ffffff;
+  box-shadow: 0.2px 0.5px 1px 1px #696969;
   font-size: 1.3rem;   
   position: relative;
   top: 2.3rem;
-  right: 3rem;
+  right: 5rem;
 }
 
 a:hover {
@@ -144,3 +144,9 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #ff00008d;   
   }
+
+  button:hover {
+    color: #ff0000;
+    transform: scale(1.05);
+    transition: 0.20s ease-in-out;
+}

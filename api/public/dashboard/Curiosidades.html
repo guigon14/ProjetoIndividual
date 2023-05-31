@@ -8,7 +8,7 @@
   <title>Curiosidades</title>
   <link rel="shortcut icon" href="../Imagem/Chapeu.png" type="image/x-icon">
   <link rel="stylesheet" href="Curiosidades.css">
-  <link rel="stylesheet" href="../css/NavBar.css">
+  <link rel="stylesheet" href="NavBarDash.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
@@ -17,7 +17,7 @@
   <div class="header">
     <div class="logo">
       <a href="Curiosidades.html"><img src="../Imagem/Caveira.png" alt="Caveira"
-          style="height: 100px; margin-top: -25%; margin-left: 60%"></a>
+          style="height: 100px; margin-top: -25%; margin-left: 20%"></a>
     </div>
     <span id="nomeU" class="nome">Olá, </span>
     <ul class="navBar">
@@ -25,6 +25,7 @@
       <li><a href="Quiz.html">Quiz</a></li>
       <li><a href="Teorias.html">Teorias</a></li>
     </ul>
+    <button onclick="sair()" class="btnavBar">LogOut</button>
   </div>
   <!-- Fim NavBar -->
   <!-- Início Curiosidades -->
@@ -80,11 +81,14 @@
       <p>copyright&copy; 2023. Developed by Guilherme Gonçalves</p>
     </div>
     <ul class="footer-content">
-      <li><a href="Login.html">Login</a></li>
-      <li><a href="Cadastro.html">Cadastro</a></li>
+      <li><a href="Quiz.html">Quiz</a></li>
+      <li><a href="Teorias.html">Teorias</a></li>
     </ul>
   </div>
   <!-- Fim Footer -->
   <script>
     nomeU.innerHTML += sessionStorage.NOME_USUARIO;
+    function sair(){      
+      window.location = "../index.html"
+    }
   </script>

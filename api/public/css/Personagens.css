@@ -31,7 +31,7 @@ a {
   display: flex;
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.3rem;
   margin: 25px;
 }
 
@@ -43,7 +43,7 @@ a {
   justify-content: space-around;
   margin-top: 2%;
   position: relative;
-  right: 20%;
+  right: 23%;
 }
 
 a:hover {
@@ -235,7 +235,7 @@ a:hover {
 .modal-content {
   width: 55%;
   height: 55%;
-  margin: 15% auto;
+  margin: 10% auto;
   background-color: #e6cb93;
   padding: 10px;
   border: 1px solid #888;
