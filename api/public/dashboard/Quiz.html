@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz</title> 
+  <title>Quiz</title>
   <link rel="shortcut icon" href="../Imagem/Chapeu.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/Quiz.css">
+  <link rel="stylesheet" href="Quiz.css">
   <link rel="stylesheet" href="NavBarDash.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
@@ -21,15 +21,154 @@
     </div>
     <span id="nomeU" class="nome">Olá, </span>
     <ul class="navBar">
-        <li><a href="Curiosidades.html">Curiosidades</a></li>
-        <li><a href="Quiz.html">Quiz</a></li>
-        <li><a href="Teorias.html">Teorias</a></li>       
+      <li><a href="Curiosidades.html">Curiosidades</a></li>
+      <li><a href="Quiz.html">Quiz</a></li>
+      <li><a href="Teorias.html">Teorias</a></li>
     </ul>
     <button onclick="sair()" class="btnavBar">LogOut</button>
   </div>
   <!-- Fim NavBar -->
-   <!-- Início Footer -->
-   <div class="footer">
+  <!-- Início conteúdo -->
+  <div class="container">
+    <div class="card">
+      <div class="h1">Quiz</div>
+      <!-- Início Tela 1 -->
+      <div class="tela" id="tela1">
+        <div class="pergunta">Pergunta - 1</div>
+        <div class="questoes">
+          <label for="op1" class="alternativas">
+            <input type="radio" id="op1" name="alternativas1" value="10">
+            <label for="op1" class="label">Opção 1</label>
+          </label>
+          <label for="op2" class="alternativas">
+            <input type="radio" id="op2" name="alternativas1" value="10">
+            <label for="op2" class="label">Opção 2</label>
+          </label>
+          <label for="op3" class="alternativas">
+            <input type="radio" id="op3" name="alternativas1" value="20">
+            <label for="op3" class="label">Opção 3</label>
+          </label>
+          <label for="op4" class="alternativas">
+            <input type="radio" id="op4" name="alternativas1" value="10">
+            <label for="op4" class="label">Opção 4</label>
+          </label>
+        </div>
+        <button onclick="proximo()" class="proximo1">Próxima Pergunta</button>
+      </div>
+      <!-- fim tela 1 -->
+      <!-- Início tela 2 -->
+      <div class="tela tela2" id="tela2">
+        <div class="pergunta">Pergunta - 2</div>
+        <div class="questoes">
+          <label for="op5" class="alternativas">
+            <input type="radio" id="op5" name="alternativas2" value="0">
+            <label for="op5" class="label">Opção 5</label>
+          </label>
+          <label for="op6" class="alternativas">
+            <input type="radio" id="op6" name="alternativas2" value="20">
+            <label for="op6" class="label">Opção 6</label>
+          </label>
+          <label for="op7" class="alternativas">
+            <input type="radio" id="op7" name="alternativas2" value="0">
+            <label for="op7" class="label">Opção 7</label>
+          </label>
+          <label for="op8" class="alternativas">
+            <input type="radio" id="op8" name="alternativas2" value="0">
+            <label for="op8" class="label">Opção 8</label>
+          </label>
+        </div>
+        <button onclick="anterior()" class="anterior">Pergunta Anterior</button>
+        <button onclick="proximo2()" class="proximo">Próxima Pergunta</button>
+      </div>
+      <!-- Fim tela 2 -->
+      <!-- Início tela 3 -->
+      <div class="tela tela3" id="tela3">
+        <div class="pergunta">Pergunta - 3</div>
+        <div class="questoes">
+          <label for="op9" class="alternativas">
+            <input type="radio" id="op9" name="alternativas3" value="20">
+            <label for="op9" class="label">Opção 9</label>
+          </label>
+          <label for="op10" class="alternativas">
+            <input type="radio" id="op10" name="alternativas3" value="0">
+            <label for="op10" class="label">Opção 10</label>
+          </label>
+          <label for="op11" class="alternativas">
+            <input type="radio" id="op11" name="alternativas3" value="0">
+            <label for="op7" class="label">Opção 11</label>
+          </label>
+          <label for="op12" class="alternativas">
+            <input type="radio" id="op12" name="alternativas3" value="0">
+            <label for="op12" class="label">Opção 12</label>
+          </label>
+        </div>
+        <button onclick="anterior2()" class="anterior">Pergunta Anterior</button>
+        <button onclick="proximo3()" class="proximo">Próxima Pergunta</button>
+      </div>
+      <!-- Fim tela 3 -->
+      <!-- Início tela 4 -->
+      <div class="tela tela4" id="tela4">
+        <div class="pergunta">Pergunta - 4</div>
+        <div class="questoes">
+          <label for="op13" class="alternativas">
+            <input type="radio" id="op13" name="alternativas4" value="0">
+            <label for="op13" class="label">Opção 13</label>
+          </label>
+          <label for="op14" class="alternativas">
+            <input type="radio" id="op14" name="alternativas4" value="20">
+            <label for="op14" class="label">Opção 14</label>
+          </label>
+          <label for="op15" class="alternativas">
+            <input type="radio" id="op15" name="alternativas4" value="0">
+            <label for="op15" class="label">Opção 15</label>
+          </label>
+          <label for="op16" class="alternativas">
+            <input type="radio" id="op16" name="alternativas4" value="0">
+            <label for="op16" class="label">Opção 16</label>
+          </label>
+        </div>
+        <button onclick="anterior3()" class="anterior">Pergunta Anterior</button>
+        <button onclick="proximo4()" class="proximo">Próxima Pergunta</button>
+      </div>
+      <!-- Fim tela 4 -->
+      <!-- Início tela 5 -->
+      <div class="tela tela5" id="tela5">
+        <div class="pergunta">Pergunta - 5</div>
+        <div class="questoes">
+          <label for="op17" class="alternativas">
+            <input type="radio" id="op17" name="alternativas5" value="0">
+            <label for="op17" class="label">Opção 17</label>
+          </label>
+          <label for="op18" class="alternativas">
+            <input type="radio" id="op18" name="alternativas5" value="0">
+            <label for="op18" class="label">Opção 18</label>
+          </label>
+          <label for="op19" class="alternativas">
+            <input type="radio" id="op19" name="alternativas5" value="0">
+            <label for="op19" class="label">Opção 19</label>
+          </label>
+          <label for="op20" class="alternativas">
+            <input type="radio" id="op20" name="alternativas5" value="20">
+            <label for="op20" class="label">Opção 20</label>
+          </label>
+        </div>
+        <button onclick="anterior4()" class="anterior">Pergunta Anterior</button>
+        <button onclick="Finalizar()" class="proximo">Finalizar</button>
+      </div>
+      <!-- Fim tela 5 --> 
+      <!-- Início Resultado -->
+      <div class="tela telaR" id="telaR">
+      <div class="result">
+      Seu score foi de: <span id="pontuacao"></span>
+      <div class="frase" id="fraseR"></div>
+      </div>
+      </div>
+      <!-- Fim Resultado  -->           
+    </div>
+  </div>
+  <!-- Fim conteúdo -->
+  <!-- Início Footer -->
+  <div class="footer">
     <div class="logo">
       <a href="index.html"><img src="../Imagem/LogoOP.png" alt="Caveira"
           style="height: 180%;margin-top: 10%; margin-left: 0%;"></a>
@@ -37,16 +176,178 @@
     <div class="copy">
       <p>copyright&copy; 2023. Developed by Guilherme Gonçalves</p>
     </div>
-    <ul class="footer-content">      
-      <li><a href="Teorias.html">Teorias</a></li><li>
-        <a href="Curiosidades.html">Curiosidades</a></li>
+    <ul class="footer-content">
+      <li><a href="Teorias.html">Teorias</a></li>
+      <li>
+        <a href="Curiosidades.html">Curiosidades</a>
+      </li>
     </ul>
-    <button onclick="sair()" class="btnavBar">LogOut</button>
   </div>
   <!-- Fim Footer -->
   <script>
     nomeU.innerHTML += sessionStorage.NOME_USUARIO;
-    function sair(){      
+    var pergunta_atual = 1;
+    var score = 0;
+    var selecionada = "";
+
+    function sair() {
       window.location = "../index.html"
+    }
+
+    // 1
+
+    function proximo() {
+      var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
+
+      for (var i = 0; i < radios.length; i++) {
+        var radio_atual = radios[i];
+
+        if (radio_atual.checked) {
+          selecionada = Number(radio_atual.value);
+          score += selecionada;
+        }
+      }
+
+      if (selecionada == "") {
+        alert("Selecione algum elemento")
+      } else {
+        tela1.style.display = "none";
+        tela2.style.display = "block";
+      }
+      pergunta_atual++;
+    }   
+
+    // 2   
+    function proximo2() {
+      var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
+
+      for (var i = 0; i < radios.length; i++) {
+        var radio_atual = radios[i];
+
+        if (radio_atual.checked) {
+          selecionada = Number(radio_atual.value);
+          score += selecionada;
+        }
+      }
+        tela2.style.display = "none";
+        tela3.style.display = "block";      
+      pergunta_atual++;
+    } 
+    
+    function anterior() {
+      tela2.style.display = "none";
+      tela1.style.display = "block";
+      pergunta_atual--;
+    }
+
+    // 3
+    function proximo3() {
+      var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
+
+      for (var i = 0; i < radios.length; i++) {
+        var radio_atual = radios[i];
+
+        if (radio_atual.checked) {
+          selecionada = Number(radio_atual.value);
+          score += selecionada;
+        }
+      }     
+        tela3.style.display = "none";
+        tela4.style.display = "block";      
+      pergunta_atual++;
+    } 
+    
+    function anterior2() {
+      tela3.style.display = "none";
+      tela2.style.display = "block";
+      pergunta_atual--;
+    }
+
+    // 4
+    function proximo4() {
+      var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
+
+      for (var i = 0; i < radios.length; i++) {
+        var radio_atual = radios[i];
+
+        if (radio_atual.checked) {
+          selecionada = Number(radio_atual.value);
+          score += selecionada;
+        }
+      }      
+        tela4.style.display = "none";
+        tela5.style.display = "block";      
+      pergunta_atual++;
+    } 
+    
+    function anterior3() {
+      tela4.style.display = "none";
+      tela3.style.display = "block";
+      pergunta_atual--;
+    }
+
+    // 5
+
+    function anterior4() {
+      tela5.style.display = "none";
+      tela4.style.display = "block";
+      pergunta_atual--;     
+    } 
+
+    function Finalizar() {
+      var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
+
+      for (var i = 0; i < radios.length; i++) {
+        var radio_atual = radios[i];
+
+        if (radio_atual.checked) {
+          selecionada = Number(radio_atual.value);
+          score += selecionada;
+        }
+      }      
+        tela5.style.display = "none";
+        telaR.style.display = "block";      
+      pergunta_atual++;
+       
+      pontuacao.innerHTML = `${score}`
+
+      if (score >= 0 && score <= 40){
+        fraseR.innerHTML = `Você não sabe nada de One Piece, assista mais.`
+      } else if (score > 40 && score <= 70){
+        fraseR.innerHTML = `Você conhece um pouco de One Piece, assista mais.`
+      } else if(score > 70 && score <= 90){
+        fraseR.innerHTML = `Você até que sabe um pouco de One Piece, assista mais.`
+      } else{
+        fraseR.innerHTML = `Você é um verdadeiro fã de One Piece, Parabéns!`
+      }
+
+      fetch("/Finalizar/Finalizar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                scoreServer: score
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+              alert ("Cadastro realizado com sucesso! Redirecionando para tela de Login...");
+            } else {
+                throw alert("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
     }
   </script>

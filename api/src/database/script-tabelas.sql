@@ -17,9 +17,9 @@ CREATE TABLE usuario (
 	senha VARCHAR(50)
 );
 
-CREATE TABLE quiz(
+CREATE TABLE Resultado(
 	idQuiz INT PRIMARY KEY AUTO_INCREMENT,
-	resultado VARCHAR(45),
+	score INT,
 	fkUsuario INT,
 	constraint FK_Usuario foreign key (fkUsuario) 
 		references usuario (idUsuario)
