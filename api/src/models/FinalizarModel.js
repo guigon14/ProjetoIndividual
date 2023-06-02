@@ -9,10 +9,10 @@ function listar() {
     return database.executar(instrucao);
 }
 
-function Finalizar(score) {
-    console.log("Acessei o aviso model \n \n\t\t >> Se der erro aqui de 'Error: connect ECONNREFESUD', \n \t\t >> verifique suas credenciais de acesso ao banco \n\t\t >> e se o servidor do seu BD esta rodando corretamente. \n\n function Finalizar():", score);
+function Finalizar(score, idUsuario) {
+    console.log("Acessei o aviso model \n \n\t\t >> Se der erro aqui de 'Error: connect ECONNREFESUD', \n \t\t >> verifique suas credenciais de acesso ao banco \n\t\t >> e se o servidor do seu BD esta rodando corretamente. \n\n function Finalizar():", score, idUsuario);
     var instrucao = `
-        INSERT INTO Resultado (score) VALUES ('${score}');
+        INSERT INTO Resultado (score, fkUsuario) VALUES ('${score}', '${idUsuario}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);

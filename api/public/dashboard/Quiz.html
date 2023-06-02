@@ -190,6 +190,7 @@
   <!-- Fim Footer -->
   <script>
     nomeU.innerHTML += sessionStorage.NOME_USUARIO;
+    var idUsuario = sessionStorage.ID_USUARIO;
     var pergunta_atual = 1;
     var score = 0;
     var selecionada = "";
@@ -331,7 +332,8 @@
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          scoreServer: score
+          scoreServer: score,
+          iduser: idUsuario
           // crie um atributo que recebe o valor recuperado aqui
           // Agora vá para o arquivo routes/usuario.js
         })
@@ -341,6 +343,7 @@
 
         if (resposta.ok) {
           alert("Cadastro realizado com sucesso!");
+          obterDadosGrafico();
         } else {
           throw alert("Houve um erro ao tentar realizar o cadastro!");
         }
@@ -353,28 +356,59 @@
 
     function sumirMensagem() {
       cardErro.style.display = "none"
+    } 
+
+    function obterDadosGrafico(idQuiz) {
+
+      fetch(`/grafico/ultimas/`, { cache: 'no-store' }).then(function (response) {
+        if (response.ok) {
+          response.json().then(function (resposta) {
+            console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+            // resposta.reverse();
+
+            plotarDadosGrafico(resposta);
+          });
+        } else {
+          console.error('Nenhum dado encontrado ou erro na API');
+        }
+      })
+        .catch(function (error) {
+          console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+        });
     }
 
+    function plotarDadosGrafico(dados) {
+
+      var data = [];
+      var labels = [];
+      var cores = ['#ff0000','#fcce05','#9905fc','#0838d8','#24a518'];
+
+      for (var i = 0; i < dados.length; i++) {
+        data.push(dados[i].score);
+        var plural = dados[i].quantidade > 1;
+        labels.push(`${dados[i].quantidade} ${plural ? "pessoas" : "pessoa"}`);
+      }  
+
+      
     const ctx = document.getElementById('myChart');
-
-    new Chart(ctx, {
-      type: 'pie',
-      data: {
-        labels: ['0-4', '4-6', '6-8', '9-10'],
-        datasets: [{
-          label: '# of Votes',
-          data: [2, 3, 5, 1],
-          fill:false,
-          backgroundColor: 'black',         
-          borderColor: 'white',
-          borderWidth: 2,
-          tension:0.1          
-        }]
-      },
-      options: {
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels,
+          datasets: [{
+            data,
+            fill: false,
+            backgroundColor: cores,
+            borderColor: 'black',
+            borderWidth: 2,
+            tension: 0.1
+          }]
+        },
         options: {
-        scales: {} // Define as escalas vazias
+          options: {
+            scales: {} // Define as escalas vazias
+          }
+        }
+      });
     }
-      }
-    });
   </script>

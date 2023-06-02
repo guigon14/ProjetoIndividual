@@ -20,13 +20,13 @@ function listar(req, res) {
 
 function Finalizar(req, res) {
     var score = req.body.scoreServer;
-
+    var idUsuario = req.body.iduser;
     if (score == undefined) {
         res.status(400).send("Seu score está undefined!");
-    } 
+    }
     else {
         
-        FinalizarModel.entrar(score)
+        FinalizarModel.Finalizar(score, idUsuario)
             .then(
                 function (resultado) {
                     console.log(`\nResultados encontrados: ${resultado.length}`);
