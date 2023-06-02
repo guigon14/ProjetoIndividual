@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="Quiz.css">
   <link rel="stylesheet" href="NavBarDash.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -153,17 +154,20 @@
           </label>
         </div>
         <button onclick="anterior4()" class="anterior">Pergunta Anterior</button>
-        <button onclick="Finalizar()" class="proximo">Finalizar</button>
+        <button onclick="Finalizar()" class="proximo">Finalizar Tentativa</button>
       </div>
-      <!-- Fim tela 5 --> 
+      <!-- Fim tela 5 -->
       <!-- Início Resultado -->
       <div class="tela telaR" id="telaR">
-      <div class="result">
-      Seu score foi de: <span id="pontuacao"></span>
-      <div class="frase" id="fraseR"></div>
+        <div class="result">
+          Seu score foi de: <span id="pontuacao"></span>
+          <div class="frase" id="fraseR"></div>
+          <div class="grafico">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
       </div>
-      </div>
-      <!-- Fim Resultado  -->           
+      <!-- Fim Resultado  -->
     </div>
   </div>
   <!-- Fim conteúdo -->
@@ -215,7 +219,7 @@
         tela2.style.display = "block";
       }
       pergunta_atual++;
-    }   
+    }
 
     // 2   
     function proximo2() {
@@ -229,11 +233,11 @@
           score += selecionada;
         }
       }
-        tela2.style.display = "none";
-        tela3.style.display = "block";      
+      tela2.style.display = "none";
+      tela3.style.display = "block";
       pergunta_atual++;
-    } 
-    
+    }
+
     function anterior() {
       tela2.style.display = "none";
       tela1.style.display = "block";
@@ -251,12 +255,12 @@
           selecionada = Number(radio_atual.value);
           score += selecionada;
         }
-      }     
-        tela3.style.display = "none";
-        tela4.style.display = "block";      
+      }
+      tela3.style.display = "none";
+      tela4.style.display = "block";
       pergunta_atual++;
-    } 
-    
+    }
+
     function anterior2() {
       tela3.style.display = "none";
       tela2.style.display = "block";
@@ -274,12 +278,12 @@
           selecionada = Number(radio_atual.value);
           score += selecionada;
         }
-      }      
-        tela4.style.display = "none";
-        tela5.style.display = "block";      
+      }
+      tela4.style.display = "none";
+      tela5.style.display = "block";
       pergunta_atual++;
-    } 
-    
+    }
+
     function anterior3() {
       tela4.style.display = "none";
       tela3.style.display = "block";
@@ -291,8 +295,8 @@
     function anterior4() {
       tela5.style.display = "none";
       tela4.style.display = "block";
-      pergunta_atual--;     
-    } 
+      pergunta_atual--;
+    }
 
     function Finalizar() {
       var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
@@ -304,50 +308,73 @@
           selecionada = Number(radio_atual.value);
           score += selecionada;
         }
-      }      
-        tela5.style.display = "none";
-        telaR.style.display = "block";      
+      }
+      tela5.style.display = "none";
+      telaR.style.display = "block";
       pergunta_atual++;
-       
+
       pontuacao.innerHTML = `${score}`
 
-      if (score >= 0 && score <= 40){
+      if (score >= 0 && score <= 40) {
         fraseR.innerHTML = `Você não sabe nada de One Piece, assista mais.`
-      } else if (score > 40 && score <= 70){
+      } else if (score > 40 && score <= 60) {
         fraseR.innerHTML = `Você conhece um pouco de One Piece, assista mais.`
-      } else if(score > 70 && score <= 90){
+      } else if (score > 60 && score <= 80) {
         fraseR.innerHTML = `Você até que sabe um pouco de One Piece, assista mais.`
-      } else{
+      } else {
         fraseR.innerHTML = `Você é um verdadeiro fã de One Piece, Parabéns!`
       }
 
       fetch("/Finalizar/Finalizar", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                // crie um atributo que recebe o valor recuperado aqui
-                // Agora vá para o arquivo routes/usuario.js
-                scoreServer: score
-            })
-        }).then(function (resposta) {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          scoreServer: score
+          // crie um atributo que recebe o valor recuperado aqui
+          // Agora vá para o arquivo routes/usuario.js
+        })
+      }).then(function (resposta) {
 
-            console.log("resposta: ", resposta);
+        console.log("resposta: ", resposta);
 
-            if (resposta.ok) {
-              alert ("Cadastro realizado com sucesso! Redirecionando para tela de Login...");
-            } else {
-                throw alert("Houve um erro ao tentar realizar o cadastro!");
-            }
-        }).catch(function (resposta) {
-            console.log(`#ERRO: ${resposta}`);
-        });
+        if (resposta.ok) {
+          alert("Cadastro realizado com sucesso!");
+        } else {
+          throw alert("Houve um erro ao tentar realizar o cadastro!");
+        }
+      }).catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+      });
 
-        return false;
+      return false;
     }
 
     function sumirMensagem() {
-        cardErro.style.display = "none"
+      cardErro.style.display = "none"
     }
+
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['0-4', '4-6', '6-8', '9-10'],
+        datasets: [{
+          label: '# of Votes',
+          data: [2, 3, 5, 1],
+          fill:false,
+          backgroundColor: 'black',         
+          borderColor: 'white',
+          borderWidth: 2,
+          tension:0.1          
+        }]
+      },
+      options: {
+        options: {
+        scales: {} // Define as escalas vazias
+    }
+      }
+    });
   </script>
