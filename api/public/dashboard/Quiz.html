@@ -354,10 +354,6 @@
       return false;
     }
 
-    function sumirMensagem() {
-      cardErro.style.display = "none"
-    } 
-
     function obterDadosGrafico(idQuiz) {
 
       fetch(`/grafico/ultimas/`, { cache: 'no-store' }).then(function (response) {
@@ -381,14 +377,13 @@
 
       var data = [];
       var labels = [];
-      var cores = ['#ff0000','#fcce05','#9905fc','#0838d8','#24a518'];
+      var cores = ['#ff0000','#fcce05','#9905fc','#0838d8','#24a518','#3fcbdd','#e953ab','#ffae00','#00a2ff','#ff0055'];
 
       for (var i = 0; i < dados.length; i++) {
-        data.push(dados[i].score);
-        var plural = dados[i].quantidade > 1;
-        labels.push(`${dados[i].quantidade} ${plural ? "pessoas" : "pessoa"}`);
+        data.push(dados[i].quantidade);        
+        labels.push(`${dados[i].score} Pontos`);
       }  
-
+      // ${plural ? "pessoas" : "pessoa"}
       
     const ctx = document.getElementById('myChart');
       new Chart(ctx, {
@@ -399,8 +394,8 @@
             data,
             fill: false,
             backgroundColor: cores,
-            borderColor: 'black',
-            borderWidth: 2,
+            // borderColor: 'white',
+            borderWidth: 1,
             tension: 0.1
           }]
         },
