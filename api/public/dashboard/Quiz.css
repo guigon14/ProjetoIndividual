@@ -4,15 +4,17 @@ body {
 }
 
 .container {
-    height: 43rem;
+    height: 50rem;
     width: 100%;
-    background-color: #f5f2f2eb;
+    background-image: url(../Imagem/Quiz.jpg);
+    background-size: cover;
+    background-position: 50%;
 }
 
 .card {
-    height: 30rem;
+    height: 33rem;
     width: 40rem;
-    background-color: #d1cece8c;
+    background-color: #d1cecee1;
     color: black;
     position: relative;
     top: 9rem;
