@@ -23,8 +23,8 @@
     <ul class="navBar">
       <li><a href="Curiosidades.html">Curiosidades</a></li>
       <li><a href="Quiz.html">Quiz</a></li>
-      <li><a href="Teorias.html">Teorias</a></li>      
-    </ul> 
+      <li><a href="Teorias.html">Teorias</a></li>
+    </ul>
     <button onclick="sair()" class="btnavBar">LogOut</button>
   </div>
   <!-- Fim NavBar -->
@@ -32,10 +32,14 @@
   <div class="imagem"></div>
   <div id="container" class="container">
     <h1>Teorias</h1>
-    <span>Uma das características marcantes de One Piece é a presença de inúmeros mistérios que instigam a imaginação dos fãs. Esses enigmas têm despertado a criatividade dos fãs, levando-os a criar teorias com o objetivo de desvendá-los. Nesta seção, apresentamos algumas teorias fascinantes sobre os maiores mistérios de One Piece. Acompanhe-nos nessa jornada repleta de especulações e descubra as possíveis respostas por trás dos segredos mais intrigantes deste mundo épico!</span>
-    <button onclick="mostrar1()">Sobre o Século Perdido</button>
-    <button onclick="mostrar2()">Sobre os ".D"</button>
-    <button onclick="mostrar3()">Akuma no Mi</button>
+    <span>Uma das características marcantes de One Piece é a presença de inúmeros mistérios que instigam a imaginação
+      dos fãs. Esses enigmas têm despertado a criatividade dos fãs, levando-os a criar teorias com o objetivo de
+      desvendá-los. Nesta seção, apresentamos algumas teorias fascinantes sobre os maiores mistérios de One Piece.
+      Acompanhe-nos nessa jornada repleta de especulações e descubra as possíveis respostas por trás dos segredos mais
+      intrigantes deste mundo épico!</span>
+    <button onclick="mostrar1()">Shanks Vilão?</button>
+    <button onclick="mostrar2()">Século Perdido</button>
+    <button onclick="mostrar3()">Poder Imu-Sama</button>
     <div id="resultado" class="card">
       <div id="texto" class="textoC"></div>
     </div>
@@ -52,40 +56,48 @@
     </div>
     <ul class="footer-content">
       <li><a href="Quiz.html">Quiz</a></li>
-      <li><a href="Curiosidades.html">Curiosidades</a></li>      
+      <li><a href="Curiosidades.html">Curiosidades</a></li>
     </ul>
   </div>
   <!-- Fim Footer -->
   <script>
     nomeU.innerHTML += sessionStorage.NOME_USUARIO;
-    
-    function mostrar1() {
-      var mudanca = document.getElementById('container');      
-      mudanca.style.height = '120vh';
 
+    function mostrar1() {
+      var mudanca = document.getElementById('container');
+      var mudancaT = document.getElementById('resultado');
+      mudanca.style.height = '150vh';
+      mudancaT.style.height = '29rem';
       resultado.style.display = 'block';
+
       texto.innerHTML = `        
-      Uma das teorias mais intrigantes em One Piece é a do "Século Perdido". Segundo essa teoria, existiu um período na história do mundo de One Piece que foi apagado ou ocultado dos registros conhecidos. Acredita-se que durante esse Século Perdido ocorreram eventos cruciais que moldaram o mundo atual, como a criação dos Frutos do Diabo, a batalha entre os antigos reinos e a fundação do Governo Mundial. Alguns especulam que esse período está diretamente ligado ao verdadeiro significado do One Piece e à natureza dos D., a misteriosa inicial compartilhada por alguns personagens. Essa teoria alimenta a curiosidade dos fãs, que estão ansiosos por descobrir a verdade por trás do Século Perdido e seu impacto na história do mundo de One Piece.
+      A teoria gira em torno da indole do ruivo. Essa teoria acredita que os vilões da história são os Dragões Celestiais, os Goroseis e Imu-sama, além de outros possíveis personagens. Esses personagens têm muito medo das armas celestiais porque no passado, na era do Joy Boy, o povo usava essas armas contra eles, o que justifica o medo. Voltando a falar sobre Shanks, considerando que Gol D. Roger não teria em sua tripulação pessoas de má índole, incluindo Buggy, que podemos dizer que é um "malvado do bem" (risos), já que Luffy é um reflexo de Roger, é improvável que haja alguém assim. Quando Shanks fala com os Goroseis sobre um certo pirata, estaria se refirindo ao Barba Negra, e Shanks quer que os Goroseis tomem medidas para impedi-lo de ganhar mais poder e alcançar o One Piece, o maior legado de Roger. Ele deseja que a pessoa que encontre o One Piece seja alguém honrado como Roger, ele mesmo ou Luffy. Agora, por que ele tem acesso aos Goroseis e o respeito de Sengoku/marinha? Ele se tornou um Yonkou, uma pessoa extremamente poderosa, para garantir que ninguém desonrado chegue ao ONE PIECE. Por isso, durante a guerra dos maiores, ele chegou atrasado, pois foi enfrentar Kaido. Apesar de ODA, de forma brilhante, trazer um ar de ambiguidade e mistério em relação a Shanks, ele é uma pessoa boa. Ele enfrentou apenas pessoas más, teve uma conversa com Barba Branca e deu seu braço por Luffy. Quanto à sua cicatriz, ocorreu em algum momento de desonra, Barba Negra fez aquilo talvez enganando Shanks e tentando matá-lo após embriagá-lo (pois Shanks gosta de festas e beber). Shanks se tornou um Yonkou com um braço, enfrentou Kaido com um braço, naquela época Barba Negra não tinha como derrotá-lo.  Shanks é uma pessoa boa e no futuro ele vai ajudar Luffy na grande guerra contra os Goroseis e Imu-sama, depois que o mundo descobrir a verdade sobre o século perdido. Todos se unirão contra os Goroseis e Imu-sama em uma grande aliança, com piratas liderados por Luffy, Shanks, entre outros, e a marinha liderada por Coby, Sengoku, Garp, Smoker, entre outros. Será uma guerra pela liberdade e para deixar de viver sob as regras e influência de Imu-sama. One Piece representa a liberdade de fazer suas próprias escolhas!
       `
     }
     function mostrar2() {
-      var mudanca = document.getElementById('container');      
-      mudanca.style.height = '120vh';
+      var mudanca = document.getElementById('container');
+      var mudancaT = document.getElementById('resultado');
+      mudanca.style.height = '175vh';
+      mudancaT.style.height = '39rem';
       resultado.style.display = 'block';
+
       texto.innerHTML = `        
-      A teoria diz que o “D” seria uma abreviação de Dawn Pirates (Piratas do Amanhecer), um bando pirata que era liderado por Joy Boy. Então, aqueles que carregam “A vontade dos D.” seriam descendentes dos Dawn Pirates. Além disso, a teoria também usa o Jaguar D. Saul para imaginar a possível identidade do primeiro Joy Boy.De acordo com a teoria, o nome original de Joy Boy era Jaguar Binks, que era um gigante de Elbaf. Como ele seria um gigante, a ideia diz que o chapéu de palha de Mariejois pertencia a Joy Boy. Enfim, o nome de “Jaguar Binks” foi pensado em referência à música Binks’ Sake.
+      Tudo começa com o povo da lua. Sabemos que eles eram tecnologicamente avançados, conforme evidenciado pelos autômatos encontrados por Enel nas ruínas da lua. No entanto, ao chegarem ao planeta, eles encontraram apenas civilizações primitivas pouco desenvolvidas, semelhantes à tribo do Kalgara de 400 anos atrás. Acredito que o povo da lua, juntamente com os povos da terra (de várias raças, como humanos e gigantes), começaram a formar o Grande Reino. Liderados por aquele que viria a ser conhecido como Joyboy, o Grande Reino começou a fazer grandes planos. Um desses planos era ajudar o povo da lua a retornar à sua antiga casa, enquanto outro era unificar o mundo, que estava dividido em quatro mares. Ao observarem a Terra de lá, o povo da lua deve ter percebido como a estrela azul estava dividida devido à Linha Vermelha, o que despertou o desejo de Joyboy de unificar o mundo. Este último plano já é conhecido pelo público de One Piece. Quanto ao plano de devolver o povo da lua à lua, a teoria acredita que a resposta esteja em "Binks no Sake". Sabemos que essa música está intimamente relacionada ao século perdido, como mostrado no capítulo 967. Vamos destacar alguns versos: Na primeira estrofe, temos o verso: "Adeus para o porto, para minha antiga casa; vamos todos cantar um don, enquanto o navio parte". Acredito que a música seja uma despedida do povo da lua para o povo do Grande Reino, onde "minha antiga casa" se refere à lua. Na terceira estrofe, temos o verso: "Dando um adeus, nunca mais vamos nos encontrar; mas não fique deprimido, a noite a lua vai aparecer no céu". Acredito que esse verso explique bem a teoria. O povo da lua está se despedindo do povo da terra, sabendo que nunca mais se verão. Eles pedem que os terráqueos não fiquem tristes, pois eles estarão lá "pertinho", na lua, e poderão sempre olhar uns para os outros. Agora surge uma questão: por que eles querem voltar para um lugar sem recursos? Mesmo que eles levem muitos recursos da terra, eles acabarão um dia. A resposta foi dada por Vegapunk, que busca desenvolver uma fonte de energia infinita. É provável que esse fosse o plano do Grande Reino para tornar possível o retorno do povo da lua, criando uma fonte inesgotável de energia para que eles pudessem sobreviver lá. Acredito que o Grande Reino não tenha conseguido fabricar essa fonte infinita, caso contrário, Roger a teria encontrado e obtido. No entanto, acredito que as instruções para criar essa fonte inesgotável estejam em Laugh Tale. Em resumo, os sonhos do Grande Reino eram unificar o mundo em um único oceano, destruindo a Red Line e reunindo todas as raças em um único reino, com o propósito das armas ancestrais, além de permitir o retorno do povo da lua à sua casa. No entanto, essas promessas de Joyboy foram quebradas devido à derrota para os 20 reinos. Como resultado, os Poneglyphs foram criados para que as gerações futuras descobrissem a história e concluíssem esses sonhos. Sem a possibilidade de voltar para casa, entre o povo da lua, que agora vive em ilhas do céu, surgem histórias sobre a Fairy Vearth, a terra prometida que agora se tornou apenas um mito.
       `
     }
     function mostrar3() {
-      var mudanca = document.getElementById('container');      
-      mudanca.style.height = '120vh';
+      var mudanca = document.getElementById('container');
+      var mudancaT = document.getElementById('resultado');
+      mudanca.style.height = '145vh';
+      mudancaT.style.height = '25rem';
+      resultado.style.display = 'block';
 
       resultado.style.display = 'block';
       texto.innerHTML = `        
-      Os personagens de One Piece foram usados como modelos animados para a empresa  AX Armani Exchange, pertencente ao famoso designer de moda italiano Giorgio Armani. Em 2009, a empresa uniu forças com o estúdio Toei para promover o 10º filme da franquia de One Piece: Strong World. Luffy tornou-se o primeiro personagem de mangá a aparecer na capa da revista de moda japonesa Mens Non-no em seus 24 anos de publicação. A parceria voltou em 2012 para o lançamento do longa One Piece Film Z. Desta vez, os personagens usavam roupas projetadas pela AX Armani Exchange que foram selecionadas pelo próprio Oda. Para ampliar a promoção cruzada, estas roupas foram disponibilizadas para compra também! 
+      Sobre as Akuma no mi dos Gorosei  e de Imu-sama, o que não falta é teoria para tentar supor que tipo de poderes cada um deles tem. A silhueta de Imu no capítulo 1085 do mangá,  que era a criatura que aparece descendo as escadas de onde ficava o trono vazio, pode ser relacionado com o formato das sombras de thriller bark e que nunca tiveram uma explicação dentro da obra, mas que parecem ter sido inspiradas na criatura chamada Umibōzu, o yokai japonês que vive no oceano e amaldiçoa o navio de qualquer pessoa que falar com ele e que um de seus kanjis vem da palavra Mar e Imu, ao contrário, pode ser lido como home, que significa mar e está presente na palavra Umibōzu e lembrando que foi dito também no arco de EggHead que o mar é considerado a mãe natureza de One Piece e que julgou a  criação de akuma no mi como algo antinatural e por isso o mar odeia os usuários de akuma no mi, e Umibōzu, que vive no oceano, amaldiçoa qualquer pessoa que falar com ele. Então essa uma possibilidade boa, até pelo formato da silhueta ser bem parecido.  Outra possibilidade bem legal que eu vi foi o poder de rimo ser inspirado na figura de Aku, um vilão principal de Samurai Jack que, apesar de ser uma animação ocidental ainda foi muito inspirada na cultura oriental, Aku na história de Samurai Jack lembra muito a figura de Yokais e Onies do folclore japonês e o próprio nome aku pode ser visto em hieróglifos egípcios, que foi de onde Alabasta também foi inspirado e que significa um Deus ou animal no Reino dos mortos. Mas o mais curioso, na verdade, são as habilidades do Aku, que incluem uma virtual imortalidade e a capacidade de moldar o próprio corpo da forma que ele quiser, o que gera várias cenas cômicas para a série e seria algo que faria um paralelo com a própria fruta do Deus nika, que também tem essa capacidade e também é usado para efeito de comédia.  
       `
     }
-    function sair(){      
+    function sair() {
       window.location = "../index.html"
     }
   </script>

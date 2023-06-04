@@ -11,7 +11,7 @@ body {
 
 .curiosidade1 {
     height: 20rem;
-    width: 90%;
+    width: 73.9rem;
     background-color: #d1cece8c;
     position: relative;
     top: 4rem;
@@ -62,7 +62,7 @@ body {
 
 .curiosidade2 {
     height: 23rem;
-    width: 90%;
+    width: 75rem;
     background-color: #d1cece8c;
     position: relative;
     top: 5rem;
@@ -89,7 +89,7 @@ body {
     justify-content: end;
     position: relative;
     top: 1rem;
-    left: 58rem;
+    left: 59rem;
     bottom: 15%;
     background-image: url(../Imagem/Memorial.jpg);
     background-size: cover;
@@ -110,12 +110,12 @@ body {
     position: relative;
     left: 3.5rem;
     bottom: 15rem;
-    margin: 2%;
+    margin: 2%;   
 }
 
 .curiosidade3 {
     height: 23rem;
-    width: 90%;
+    width: 73.9rem;   
     background-color: #d1cece8c;
     position: relative;
     top: 5rem;
@@ -141,7 +141,7 @@ body {
     height: 15rem;
     justify-content: end;
     position: relative;    
-    left: 2rem;
+    left: 1rem;
     top: 2rem;
     background-image: url(../Imagem/Armani.png);
     background-size: cover;
@@ -167,7 +167,7 @@ body {
 
 .curiosidade4 {
     height: 25rem;
-    width: 90%;
+    width: 75rem;
     background-color: #d1cece8c;
     position: relative;
     top: 5rem;
@@ -194,7 +194,7 @@ body {
     justify-content: end;
     position: relative;
     top: 3rem;
-    left: 47rem;
+    left: 49rem;
     bottom: 15%;
     background-image: url(../Imagem/DragonBall.jpg);
     background-size: cover;
@@ -220,7 +220,7 @@ body {
 
 .curiosidade5 {
     height: 20rem;
-    width: 90%;
+    width: 73.9rem;
     background-color: #d1cece8c;
     position: relative;
     top: 5rem;
@@ -265,7 +265,7 @@ body {
     font-weight: bold;
     line-height: 1.5em;
     position: relative;
-    left: 21.5rem;
+    left: 22.5rem;
     bottom: 12rem;
     margin: 2%;
 }

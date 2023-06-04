@@ -69,8 +69,8 @@ body {
 }
 
 .alternativas input[type="radio"]:checked+label {
-    border: #ff0000;
-    border-radius: 1rem;
+    border-color: #ff0000;    
+    color: #ff0000;    
 }
 
 .alternativas:hover {
@@ -84,20 +84,6 @@ input {
     border: none;
 }
 
-.card .proximo1 {
-    height: 2rem;
-    background-color: black;
-    border: none;
-    border-radius: 0.5rem;
-    color: white;
-    text-decoration: none;
-    box-shadow: 0.2px 0.5px 1px 1px #696969;
-    font-size: 1.3rem;
-    position: relative;
-    top: 2rem;
-    left: 12rem;
-}
-
 .card .proximo {
     height: 2rem;
     background-color: black;
@@ -109,21 +95,7 @@ input {
     font-size: 1.3rem;
     position: relative;
     top: 2rem;
-    left: 10rem;
-}
-
-.card .anterior {
-    height: 2rem;
-    background-color: black;
-    border: none;
-    border-radius: 0.5rem;
-    color: white;
-    text-decoration: none;
-    box-shadow: 0.2px 0.5px 1px 1px #696969;
-    font-size: 1.3rem;
-    position: relative;
-    top: 2rem;
-    left: 3rem;
+    left: 12rem;
 }
 
 .tela {
@@ -146,7 +118,21 @@ input {
 .tela5 {
     display: none;
 }
-
+.tela6 {
+    display: none;
+}
+.tela7 {
+    display: none;
+}
+.tela8 {
+    display: none;
+}
+.tela9 {
+    display: none;
+}
+.tela10 {
+    display: none;
+}
 .telaR {
     display: none;
 }
@@ -155,7 +141,7 @@ input {
     font-size: 1.5rem;
     color: black;
     position: relative;
-    top: 5rem;
+    top: 5rem;    
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -171,13 +157,14 @@ input {
     position: relative;
     top: 1rem;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1.5rem;
 }
 
 .grafico{
     height: 15rem;
     width: 20rem;
     position: relative;
-    top: 3rem;
+    top: 1.5rem;
     left: 10rem;    
 }
 

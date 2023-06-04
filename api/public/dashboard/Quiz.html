@@ -35,26 +35,26 @@
       <div class="h1">Quiz - One Piece</div>
       <!-- Início Tela 1 -->
       <div class="tela" id="tela1">
-        <div class="pergunta">Qual é o navio atual do bando dos Chapéus de Palha</div>
+        <div class="pergunta">Qual é o navio atual do bando dos Chapéus de Palha?</div>
         <div class="questoes">
           <label for="op1" class="alternativas">
-            <input type="radio" id="op1" name="alternativas1" value="10">
-            <label for="op1" class="label">Merry</label>
+            <input type="radio" id="op1" name="alternativas1" value="0">
+            <label for="op1" class="label">Going Merry</label>
           </label>
           <label for="op2" class="alternativas">
-            <input type="radio" id="op2" name="alternativas1" value="10">
+            <input type="radio" id="op2" name="alternativas1" value="0">
             <label for="op2" class="label">Nami</label>
           </label>
           <label for="op3" class="alternativas">
-            <input type="radio" id="op3" name="alternativas1" value="20">
-            <label for="op3" class="label">Sunny</label>
+            <input type="radio" id="op3" name="alternativas1" value="10">
+            <label for="op3" class="label">Thousand Sunny</label>
           </label>
           <label for="op4" class="alternativas">
-            <input type="radio" id="op4" name="alternativas1" value="10">
+            <input type="radio" id="op4" name="alternativas1" value="0">
             <label for="op4" class="label">Moby Dick</label>
           </label>
         </div>
-        <button onclick="proximo()" class="proximo1">Próxima Pergunta</button>
+        <button onclick="proximo()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- fim tela 1 -->
       <!-- Início tela 2 -->
@@ -63,10 +63,10 @@
         <div class="questoes">
           <label for="op5" class="alternativas">
             <input type="radio" id="op5" name="alternativas2" value="0">
-            <label for="op5" class="label">Luffy</label>
+            <label for="op5" class="label">Monkey D. Luffy</label>
           </label>
           <label for="op6" class="alternativas">
-            <input type="radio" id="op6" name="alternativas2" value="20">
+            <input type="radio" id="op6" name="alternativas2" value="10">
             <label for="op6" class="label">Dragon</label>
           </label>
           <label for="op7" class="alternativas">
@@ -77,17 +77,16 @@
             <input type="radio" id="op8" name="alternativas2" value="0">
             <label for="op8" class="label">Garp</label>
           </label>
-        </div>
-        <button onclick="anterior()" class="anterior">Pergunta Anterior</button>
+        </div>        
         <button onclick="proximo2()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 2 -->
       <!-- Início tela 3 -->
       <div class="tela tela3" id="tela3">
-        <div class="pergunta">Quem protegeu o Sunny durante 2 anos</div>
+        <div class="pergunta">Quem protegeu o Sunny durante 2 anos?</div>
         <div class="questoes">
           <label for="op9" class="alternativas">
-            <input type="radio" id="op9" name="alternativas3" value="20">
+            <input type="radio" id="op9" name="alternativas3" value="10">
             <label for="op9" class="label">Kuma</label>
           </label>
           <label for="op10" class="alternativas">
@@ -102,8 +101,7 @@
             <input type="radio" id="op12" name="alternativas3" value="0">
             <label for="op12" class="label">Sabo</label>
           </label>
-        </div>
-        <button onclick="anterior2()" class="anterior">Pergunta Anterior</button>
+        </div>        
         <button onclick="proximo3()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 3 -->
@@ -116,7 +114,7 @@
             <label for="op13" class="label">Wado Ichimonji, Shusui e Sandai Kitetsu</label>
           </label>
           <label for="op14" class="alternativas">
-            <input type="radio" id="op14" name="alternativas4" value="20">
+            <input type="radio" id="op14" name="alternativas4" value="10">
             <label for="op14" class="label">Wado Ichimonji, Sandai Kitetsu e Enma</label>
           </label>
           <label for="op15" class="alternativas">
@@ -127,8 +125,7 @@
             <input type="radio" id="op16" name="alternativas4" value="0">
             <label for="op16" class="label">Yubashiri, Shusui e Wado Ichimonji</label>
           </label>
-        </div>
-        <button onclick="anterior3()" class="anterior">Pergunta Anterior</button>
+        </div>        
         <button onclick="proximo4()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 4 -->
@@ -149,19 +146,139 @@
             <label for="op19" class="label">Teach Law</label>
           </label>
           <label for="op20" class="alternativas">
-            <input type="radio" id="op20" name="alternativas5" value="20">
+            <input type="radio" id="op20" name="alternativas5" value="10">
             <label for="op20" class="label">Trafalgar D. Water Law</label>
           </label>
-        </div>
-        <button onclick="anterior4()" class="anterior">Pergunta Anterior</button>
-        <button onclick="Finalizar()" class="proximo">Finalizar Tentativa</button>
+        </div>        
+        <button onclick="proximo5()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 5 -->
+      <!-- Início tela 6 -->
+      <div class="tela tela6" id="tela6">
+        <div class="pergunta">Qual o nome do personagem que usa a fruta do relâmpago?</div>
+        <div class="questoes">
+          <label for="op21" class="alternativas">
+            <input type="radio" id="op21" name="alternativas6" value="0">
+            <label for="op21" class="label">Kizaru</label>
+          </label>
+          <label for="op22" class="alternativas">
+            <input type="radio" id="op22" name="alternativas6" value="10">
+            <label for="op22" class="label">Enel</label>
+          </label>
+          <label for="op23" class="alternativas">
+            <input type="radio" id="op23" name="alternativas6" value="0">
+            <label for="op23" class="label">jinbe</label>
+          </label>
+          <label for="op24" class="alternativas">
+            <input type="radio" id="op24" name="alternativas6" value="0">
+            <label for="op24" class="label">Broock</label>
+          </label>
+        </div>        
+        <button onclick="proximo6()" class="proximo">Próxima Pergunta</button>
+      </div>
+      <!-- Fim tela 6 -->
+      <!-- Início tela 7 -->
+      <div class="tela tela7" id="tela7">
+        <div class="pergunta">Qual é o nome da akuma no mi do barba branca?</div>
+        <div class="questoes">
+          <label for="op25" class="alternativas">
+            <input type="radio" id="op25" name="alternativas7" value="0">
+            <label for="op25" class="label">Soro Soro no mi</label>
+          </label>
+          <label for="op26" class="alternativas">
+            <input type="radio" id="op26" name="alternativas7" value="0">
+            <label for="op26" class="label">Hie Hie no mi</label>
+          </label>
+          <label for="op27" class="alternativas">
+            <input type="radio" id="op27" name="alternativas7" value="10">
+            <label for="op27" class="label">Gura Gura no mi</label>
+          </label>
+          <label for="op28" class="alternativas">
+            <input type="radio" id="op28" name="alternativas7" value="0">
+            <label for="op28" class="label">Goro Goro no mi</label>
+          </label>
+        </div>        
+        <button onclick="proximo7()" class="proximo">Próxima Pergunta</button>
+      </div>
+      <!-- Fim tela 7 -->
+      <!-- Início tela 8 -->
+      <div class="tela tela8" id="tela8">
+        <div class="pergunta">Qual personagem é conhecido por ter comido duas Akuma no Mi?</div>
+        <div class="questoes">
+          <label for="op29" class="alternativas">
+            <input type="radio" id="op29" name="alternativas8" value="10">
+            <label for="op29" class="label">Marshall D Teach</label>
+          </label>
+          <label for="op30" class="alternativas">
+            <input type="radio" id="op30" name="alternativas8" value="0">
+            <label for="op30" class="label">Trafalgar D. Water Law</label>
+          </label>
+          <label for="op31" class="alternativas">
+            <input type="radio" id="op31" name="alternativas8" value="0">
+            <label for="op31" class="label">Rocks D. Xebec</label>
+          </label>
+          <label for="op32" class="alternativas">
+            <input type="radio" id="op32" name="alternativas8" value="0">
+            <label for="op32" class="label">Roronoa Zoro</label>
+          </label>
+        </div>        
+        <button onclick="proximo8()" class="proximo">Próxima Pergunta</button>
+      </div>
+      <!-- Fim tela 8 -->
+      <!-- Início tela 9 -->
+      <div class="tela tela9" id="tela9">
+        <div class="pergunta">Qual foi o primeiro navio dos Chapéus de Palha antes deles conseguirem o Sunny??</div>
+        <div class="questoes">
+          <label for="op33" class="alternativas">
+            <input type="radio" id="op33" name="alternativas9" value="0">
+            <label for="op33" class="label">Miss Love Duck</label>
+          </label>
+          <label for="op34" class="alternativas">
+            <input type="radio" id="op34" name="alternativas9" value="0">
+            <label for="op34" class="label">Coffin Boat</label>
+          </label>
+          <label for="op35" class="alternativas">
+            <input type="radio" id="op35" name="alternativas9" value="10">
+            <label for="op35" class="label">Going Merry</label>
+          </label>
+          <label for="op36" class="alternativas">
+            <input type="radio" id="op36" name="alternativas9" value="0">
+            <label for="op36" class="label">Dreadnaught Sabre</label>
+          </label>
+        </div>        
+        <button onclick="proximo9()" class="proximo">Próxima Pergunta</button>
+      </div>
+      <!-- Fim tela 9  -->
+      <!-- Início tela 10 -->
+      <div class="tela tela10" id="tela10">
+        <div class="pergunta">Qual o sonho do Luffy?</div>
+        <div class="questoes">
+          <label for="op37" class="alternativas">
+            <input type="radio" id="op37" name="alternativas10" value="0">
+            <label for="op37" class="label">Se Tornar o Pirata mais Forte de Todos</label>
+          </label>
+          <label for="op38" class="alternativas">
+            <input type="radio" id="op38" name="alternativas10" value="10">
+            <label for="op38" class="label">Ser o Rei dos Piratas</label>
+          </label>
+          <label for="op39" class="alternativas">
+            <input type="radio" id="op39" name="alternativas10" value="0">
+            <label for="op39" class="label">Ter uma Família</label>
+          </label>
+          <label for="op40" class="alternativas">
+            <input type="radio" id="op40" name="alternativas10" value="0">
+            <label for="op40" class="label">Encontrar Seu Irmão Perdido</label>
+          </label>
+        </div>        
+        <button onclick="Finalizar()" class="proximo">Finalizar Tentativa</button>
+      </div>      
+      <!-- Fim tela 10 -->
       <!-- Início Resultado -->
       <div class="tela telaR" id="telaR">
         <div class="result">
           Seu score foi de: <span id="pontuacao"></span>
           <div class="frase" id="fraseR"></div>
+          Veja o score de de outras pessoas:
           <div class="grafico">
             <canvas id="myChart"></canvas>
           </div>
@@ -213,12 +330,12 @@
         }
       }
 
-      if (selecionada == "") {
-        alert("Selecione algum elemento")
-      } else {
+      // if (selecionada == "") {
+      //   alert("Selecione algum elemento")
+      // } else {
         tela1.style.display = "none";
         tela2.style.display = "block";
-      }
+      // }
       pergunta_atual++;
     }
 
@@ -238,13 +355,6 @@
       tela3.style.display = "block";
       pergunta_atual++;
     }
-
-    function anterior() {
-      tela2.style.display = "none";
-      tela1.style.display = "block";
-      pergunta_atual--;
-    }
-
     // 3
     function proximo3() {
       var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
@@ -261,13 +371,6 @@
       tela4.style.display = "block";
       pergunta_atual++;
     }
-
-    function anterior2() {
-      tela3.style.display = "none";
-      tela2.style.display = "block";
-      pergunta_atual--;
-    }
-
     // 4
     function proximo4() {
       var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
@@ -283,23 +386,9 @@
       tela4.style.display = "none";
       tela5.style.display = "block";
       pergunta_atual++;
-    }
-
-    function anterior3() {
-      tela4.style.display = "none";
-      tela3.style.display = "block";
-      pergunta_atual--;
-    }
-
+    }  
     // 5
-
-    function anterior4() {
-      tela5.style.display = "none";
-      tela4.style.display = "block";
-      pergunta_atual--;
-    }
-
-    function Finalizar() {
+    function proximo5() {
       var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
 
       for (var i = 0; i < radios.length; i++) {
@@ -311,6 +400,86 @@
         }
       }
       tela5.style.display = "none";
+      tela6.style.display = "block";
+      pergunta_atual++;
+    }  
+    // 6
+    function proximo6() {
+      var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
+
+      for (var i = 0; i < radios.length; i++) {
+        var radio_atual = radios[i];
+
+        if (radio_atual.checked) {
+          selecionada = Number(radio_atual.value);
+          score += selecionada;
+        }
+      }
+      tela6.style.display = "none";
+      tela7.style.display = "block";
+      pergunta_atual++;
+    }  
+    // 7
+    function proximo7() {
+      var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
+
+      for (var i = 0; i < radios.length; i++) {
+        var radio_atual = radios[i];
+
+        if (radio_atual.checked) {
+          selecionada = Number(radio_atual.value);
+          score += selecionada;
+        }
+      }
+      tela7.style.display = "none";
+      tela8.style.display = "block";
+      pergunta_atual++;
+    }  
+    // 8
+    function proximo8() {
+      var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
+
+      for (var i = 0; i < radios.length; i++) {
+        var radio_atual = radios[i];
+
+        if (radio_atual.checked) {
+          selecionada = Number(radio_atual.value);
+          score += selecionada;
+        }
+      }
+      tela8.style.display = "none";
+      tela9.style.display = "block";
+      pergunta_atual++;
+    } 
+    // 9 
+    function proximo9() {
+      var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
+
+      for (var i = 0; i < radios.length; i++) {
+        var radio_atual = radios[i];
+
+        if (radio_atual.checked) {
+          selecionada = Number(radio_atual.value);
+          score += selecionada;
+        }
+      }
+      tela9.style.display = "none";
+      tela10.style.display = "block";
+      pergunta_atual++;
+    } 
+    // 10
+    function Finalizar() {
+      var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
+
+      for (var i = 0; i < radios.length; i++) {
+        var radio_atual = radios[i];
+
+        if (radio_atual.checked) {
+          selecionada = Number(radio_atual.value);
+          score += selecionada;
+        }
+      }
+      tela10.style.display = "none";
       telaR.style.display = "block";
       pergunta_atual++;
 
@@ -341,8 +510,7 @@
 
         console.log("resposta: ", resposta);
 
-        if (resposta.ok) {
-          alert("Cadastro realizado com sucesso!");
+        if (resposta.ok) {          
           obterDadosGrafico();
         } else {
           throw alert("Houve um erro ao tentar realizar o cadastro!");

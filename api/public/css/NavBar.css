@@ -10,7 +10,7 @@ body {
     height: 96px;
     border-bottom: 0.35rem ridge #ff0000;
     background-color: #000000;
-    z-index: 999; 
+    z-index: 998; 
 }
 
 .logo {

@@ -5,14 +5,6 @@ body {
   background-color: black;
 }
 
-/* :root {
-    --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-footer: 65px;
-  } */
-
 .container {
   display: flex;
   width: 100%; 
@@ -106,14 +98,15 @@ body {
 
 .card_erro {
   display: none;
-  background-color: #fff;
+  background-color: whitesmoke;
   color: black;
   width: 230px;
   position: fixed;
   border-radius: 4px;
-  border: #e6005a 3px solid;
+  border: #ff0000 3px solid;
   padding: 10px;
   margin-right: 10%;
+  z-index: 999;
 }
 
 .card_erro #mensagem_erro {
@@ -128,21 +121,6 @@ body {
   color: #fff;
 }
 
-/* .footer h4 {
-    margin: 0;
-  }
-  
-  .footer .container {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  .footer .container .version {
-    font-size: 12px;
-    font-weight: 800;
-  } */
 
 .simulador {
   color: white;
