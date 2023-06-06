@@ -97,17 +97,67 @@
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+        // validações para o cadastro 
+    if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+      cardErro.style.display = "block"
+      mensagem_erro.innerHTML = "Tem Campos em Branco";
 
-            finalizarAguardar();
-            return false;
-        }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
+      finalizarAguardar();
+      return false;
+    }
 
+    else {
+      setInterval(sumirMensagem, 5000);
+    }
+
+
+    if (nomeVar.length > 35) {
+      cardErro.style.display = "block"
+      mensagem_erro.innerHTML = "O nome tem que ter até 35 caracteres";
+
+      finalizarAguardar();
+      return false;
+    } else {
+      setInterval(sumirMensagem, 5000)
+    }    
+
+    if (emailVar.search("@") == -1) {
+      cardErro.style.display = "block"
+      mensagem_erro.innerHTML = "O Email deve conter @";
+      finalizarAguardar();
+      return false;
+    } else {
+      setInterval(sumirMensagem, 5000)
+    }
+
+    if (emailVar.search(".com") == -1) {
+      cardErro.style.display = "block"
+      mensagem_erro.innerHTML = "O Email deve conter '.com'";
+      finalizarAguardar();
+      return false;
+    } else {
+      setInterval(sumirMensagem, 5000)
+    }
+
+    if (senhaVar.length < 8) {
+      cardErro.style.display = "block"
+      mensagem_erro.innerHTML = "A senha tem que ter mais que 8 caracteres";
+
+      finalizarAguardar();
+      return false;
+    } else {
+      setInterval(sumirMensagem, 5000)
+    }
+
+    if (senhaVar != confirmacaoSenhaVar) {
+      cardErro.style.display = "block"
+      mensagem_erro.innerHTML = "A senha está diferente do campo confirmar senha";
+
+      finalizarAguardar();
+      return false;
+    } else {
+      setInterval(sumirMensagem, 10000)
+    }
         // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
             method: "POST",
