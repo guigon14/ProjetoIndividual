@@ -77,3 +77,59 @@ input, button{
     transition: 0.20s ease-in-out;
 }
 
+/* Inicio mensagens */
+.loading-div {
+    width: 50px;
+    display: none;
+  }
+  
+  .loading-div img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  #div_erros_login {
+    display: none
+  }
+  
+  .alerta_erro {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .card_erro {
+    display: none;
+    background-color: whitesmoke;
+    color: black;
+    width: 17rem;
+    position: fixed;
+    border-radius: 1rem;
+    border: #ff0000 3px solid;
+    padding: 1rem;
+    margin-right: 10rem;
+    margin-top: 7rem;
+    z-index: 999;
+  }
+  
+  .card_erro #mensagem_erro {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .footer {
+    height: var(--tamanho-footer);
+    width: 100%;
+    background-color: #32b9cd;
+    color: #fff;
+  }
+  
+  
+  .simulador {
+    color: white;
+  }
+  
+  .simulador .container {
+    flex-direction: column;
+    overflow: scroll;
+    height: var(--tamanho-simulador);
+  }

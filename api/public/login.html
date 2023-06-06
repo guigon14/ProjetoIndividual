@@ -48,6 +48,8 @@
         </div>
     </div>
     <!-- Fim corpo -->
+    <div id="div_aguardar" class="loading-div"></div>
+    <div id="div_erros_login"></div>
     <!-- Início Footer -->
     <div class="footer">
         <div class="logo">
@@ -61,12 +63,7 @@
             <li><a href="Cadastro.html">Cadastro</a></li>
         </ul>
     </div>
-    <!-- Fim Footer -->
-
-    <div id="div_aguardar" class="loading-div">
-    </div>
-
-    <div id="div_erros_login"></div>
+    <!-- Fim Footer -->   
 </body>
 
 </html>
@@ -115,7 +112,7 @@
                     sessionStorage.ID_USUARIO = json.idUsuario;
 
                     setTimeout(function () {
-                        window.location = "dashboard/Quiz.html";
+                        window.location = "dashboard/Teorias.html";
                     }, 1000); // apenas para exibir o loading
 
                 });

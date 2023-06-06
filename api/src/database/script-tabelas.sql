@@ -25,9 +25,9 @@ CREATE TABLE Resultado(
 		references usuario (idUsuario)
 );
 
-select * from Resultado;
-
 SELECT COUNT(idQuiz) AS quantidade, score FROM Resultado GROUP BY score;
+
+select * from usuario;
 
 /*
 comando para sql server - banco remoto - ambiente de produção
