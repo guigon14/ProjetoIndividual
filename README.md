@@ -1,2 +1,4 @@
-# THAOP
+# ONE PIECE
 The Age Of Pirates ⛵☠️
+
+PROJETO FEITO POR UM FÃ DE LONGA DATA ❤

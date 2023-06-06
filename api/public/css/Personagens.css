@@ -275,7 +275,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   position: relative;
-  top: 0%;
+  top: 2rem;
   left: 3%;
   bottom: 15%;
   margin: 2%;
@@ -287,9 +287,9 @@ a:hover {
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  padding: 5%;
+  padding: 1.5rem;
   position: relative;
-  bottom: 53%;
+  bottom: 10rem;
 }
 
 /* Início Footer */

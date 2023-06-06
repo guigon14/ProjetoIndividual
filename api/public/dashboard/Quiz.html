@@ -77,7 +77,7 @@
             <input type="radio" id="op8" name="alternativas2" value="0">
             <label for="op8" class="label">Garp</label>
           </label>
-        </div>        
+        </div>
         <button onclick="proximo2()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 2 -->
@@ -101,7 +101,7 @@
             <input type="radio" id="op12" name="alternativas3" value="0">
             <label for="op12" class="label">Sabo</label>
           </label>
-        </div>        
+        </div>
         <button onclick="proximo3()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 3 -->
@@ -125,7 +125,7 @@
             <input type="radio" id="op16" name="alternativas4" value="0">
             <label for="op16" class="label">Yubashiri, Shusui e Wado Ichimonji</label>
           </label>
-        </div>        
+        </div>
         <button onclick="proximo4()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 4 -->
@@ -149,7 +149,7 @@
             <input type="radio" id="op20" name="alternativas5" value="10">
             <label for="op20" class="label">Trafalgar D. Water Law</label>
           </label>
-        </div>        
+        </div>
         <button onclick="proximo5()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 5 -->
@@ -173,7 +173,7 @@
             <input type="radio" id="op24" name="alternativas6" value="0">
             <label for="op24" class="label">Broock</label>
           </label>
-        </div>        
+        </div>
         <button onclick="proximo6()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 6 -->
@@ -197,7 +197,7 @@
             <input type="radio" id="op28" name="alternativas7" value="0">
             <label for="op28" class="label">Goro Goro no mi</label>
           </label>
-        </div>        
+        </div>
         <button onclick="proximo7()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 7 -->
@@ -221,7 +221,7 @@
             <input type="radio" id="op32" name="alternativas8" value="0">
             <label for="op32" class="label">Roronoa Zoro</label>
           </label>
-        </div>        
+        </div>
         <button onclick="proximo8()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 8 -->
@@ -245,7 +245,7 @@
             <input type="radio" id="op36" name="alternativas9" value="0">
             <label for="op36" class="label">Dreadnaught Sabre</label>
           </label>
-        </div>        
+        </div>
         <button onclick="proximo9()" class="proximo">Próxima Pergunta</button>
       </div>
       <!-- Fim tela 9  -->
@@ -269,9 +269,9 @@
             <input type="radio" id="op40" name="alternativas10" value="0">
             <label for="op40" class="label">Encontrar Seu Irmão Perdido</label>
           </label>
-        </div>        
+        </div>
         <button onclick="Finalizar()" class="proximo">Finalizar Tentativa</button>
-      </div>      
+      </div>
       <!-- Fim tela 10 -->
       <!-- Início Resultado -->
       <div class="tela telaR" id="telaR">
@@ -330,12 +330,10 @@
         }
       }
 
-      // if (selecionada == "") {
-      //   alert("Selecione algum elemento")
-      // } else {
-        tela1.style.display = "none";
-        tela2.style.display = "block";
-      // }
+
+      tela1.style.display = "none";
+      tela2.style.display = "block";
+
       pergunta_atual++;
     }
 
@@ -386,7 +384,7 @@
       tela4.style.display = "none";
       tela5.style.display = "block";
       pergunta_atual++;
-    }  
+    }
     // 5
     function proximo5() {
       var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
@@ -402,7 +400,7 @@
       tela5.style.display = "none";
       tela6.style.display = "block";
       pergunta_atual++;
-    }  
+    }
     // 6
     function proximo6() {
       var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
@@ -418,7 +416,7 @@
       tela6.style.display = "none";
       tela7.style.display = "block";
       pergunta_atual++;
-    }  
+    }
     // 7
     function proximo7() {
       var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
@@ -434,7 +432,7 @@
       tela7.style.display = "none";
       tela8.style.display = "block";
       pergunta_atual++;
-    }  
+    }
     // 8
     function proximo8() {
       var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
@@ -450,7 +448,7 @@
       tela8.style.display = "none";
       tela9.style.display = "block";
       pergunta_atual++;
-    } 
+    }
     // 9 
     function proximo9() {
       var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
@@ -466,7 +464,7 @@
       tela9.style.display = "none";
       tela10.style.display = "block";
       pergunta_atual++;
-    } 
+    }
     // 10
     function Finalizar() {
       var radios = document.getElementsByName(`alternativas${pergunta_atual}`)
@@ -510,7 +508,7 @@
 
         console.log("resposta: ", resposta);
 
-        if (resposta.ok) {          
+        if (resposta.ok) {
           obterDadosGrafico();
         } else {
           throw alert("Houve um erro ao tentar realizar o cadastro!");
@@ -545,15 +543,14 @@
 
       var data = [];
       var labels = [];
-      var cores = ['#ff0000','#fcce05','#9905fc','#0838d8','#24a518','#3fcbdd','#e953ab','#ffae00','#00a2ff','#ff0055'];
+      var cores = ['#ff0000', '#fcce05', '#9905fc', '#0838d8', '#24a518', '#3fcbdd', '#e953ab', '#ffae00', '#00a2ff', '#ff0055'];
 
       for (var i = 0; i < dados.length; i++) {
-        data.push(dados[i].quantidade);        
+        data.push(dados[i].quantidade);
         labels.push(`${dados[i].score} Pontos`);
-      }  
-      // ${plural ? "pessoas" : "pessoa"}
-      
-    const ctx = document.getElementById('myChart');
+      }    
+
+      const ctx = document.getElementById('myChart');
       new Chart(ctx, {
         type: 'pie',
         data: {
@@ -561,8 +558,7 @@
           datasets: [{
             data,
             fill: false,
-            backgroundColor: cores,
-            // borderColor: 'white',
+            backgroundColor: cores,           
             borderWidth: 1,
             tension: 0.1
           }]
